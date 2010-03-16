@@ -1,0 +1,102 @@
+Todo - Release 0.02
+    * Use the new login system in the shop, remove UserAccount class.
+    * Rename UserAccount table to User
+    * All headings and dummy text that should be on the site.
+    * Load db with valid products.    
+
+Todo - Release 0.03
+    * Send confirmation email when order is completed.
+    * Add VAT to products and orderHeader/orderRow.
+    * Add shipping cost.
+    * Username and password must be unique in db.
+
+Todo - Release 0.03
+    * Browser Back/forward functionality in product views.
+    * Bread crumbs on all pages.
+
+Todo - Release 0.04 (Better development tools)
+    * Add to subversion or git or launchpad...
+    * Setup doxygen
+    * Setup database model documents.
+    * Setup uml class diagrams.
+
+Todo - Release 0.05 (More comunity feeling)
+    * Comment system for products.
+    * Rate system for products.
+
+Todo - Release 0.06 (Inventory)
+    * Inventory system connected to the Products classes.
+
+Todo - Release 0.07 (Better code)
+    * Refactor and clean the code.
+    * Add an observer pattern, when the model (backend)
+      is changed, the view widgets should be changed.
+    * All db objects, should have a session?
+
+Todo - Release 0.08 (Production)
+    * Real products.
+    * Real texts.
+
+Topo - Release 0.0x
+    * User can see what orders he has done before.
+    * Delete items in "check out" cart.
+      Need to reorganize a couple of objects and classes to fix this.
+
+2010-03-15
+    * New login class with permission system.
+
+2010-03-07
+    * Create thumb images.
+
+2010-03-06
+    * Loaded some products.
+    * Lots of struggling with utf8.
+
+2010-03-03
+    * Update number of items in "check out" cart.
+
+2010-02-27
+    * If the userAccount has been modified during the check out process,
+      store the new info.
+
+2010-02-26
+    * View the userAccount info in the check out process, instead of
+      orderHeader orginator.
+    * Set the orginator just before storing the orderHeader.
+    * In "check out panel" when completing, add new order.
+    * In "check out panel" make each page work.
+    * Migrate Cart into OrderHeader.
+    * In "check out panel" add prev/next buttons.
+    * In "check out panel" move each page, to it's own class, and to sub dir.
+
+2010-02-19
+    * In "check out panel" check if user is loged in.
+    * Connect cart "check out" to user and cart system.
+    * When loged into the cart, fill with user info.
+
+2010-02-18
+    * Create user login system.
+    * Fix the check out button.
+
+2010-02-08
+    * Create cart system.
+    * When selecting a ProductType, only that types products should be views.
+    * Only list product typs that has products.
+    * List products in webshop from db.
+    * Display product data in webshop from db.
+    * Add dummy product test data to database.
+2010-02-04:    
+    * avshopdbinstall, Prepare the database with default data.
+    * List producttypes in webshop from db.
+    * Create changelog, auhtors and project docs.
+    * Setup new directory structure.
+    * Setup avShopBackEnd in Qt Creator
+    * Setup avShopWtFrontEnd in Qt Creator
+    * Setup unit tests for avShopBackEnd
+
+2010-01-xx:
+    * Build wt frontend based on the php site /var/www/php.
+    * Learn more about Witty
+    * Write unit tests for avShopBackEnd
+    * Write avShopBackEnd,
+    * Learn more about soci

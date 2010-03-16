@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<messages>
+    <message id="logo.slogan">Building Smarter Homes</message>
+    <message id="footer.copyright">&copy; Copyright Amivono AB 2010</message>
+
+    <message id="products">Products</message>
+    <message id="faq">FAQ</message>
+    <message id="contact_us">Contact us</message>
+    <message id="about_us">About us</message>
+    <message id="sitemap">Sitemap</message>
+
+    <message id="button.ok">Ok</message>
+    <message id="button.prev">Prev</message>
+    <message id="button.next">Next</message>
+    <message id="button.complete">Complete</message>
+    <message id="button.update">Update</message>
+    <message id="button.buy">Buy</message>
+
+    <message id="label.type">Type:</message>
+    <message id="label.manufacture">Manufacture:</message>
+    <message id="label.product_no">Product no:</message>
+    <message id="label.delivery_time">Delivery:</message>
+
+    <message id="cart.tooltip">Shopping cart</message>
+    <message id="cart.shopping_cart_is_empty">Shopping cart is empty</message>
+    <message id="cart.check_out">Check out</message>
+    <message id="cart.total">Total:</message>
+    <message id="cart.ex_vat">ex. VAT</message>
+    <message id="cart.inc_vat">inc. VAT</message>
+
+    <message id="check_out.intro">
+    Please verify that the choosen products in the cart is correct. Then
+    check your information and choose the payment method you'd like to use.
+    Lastly confirm that you have read our terms and conditions.
+    </message>
+
+    <message id="check_out.cart_label">Shopping cart</message>
+    <message id="check_out.quantity">Quantity</message>
+    <message id="check_out.product_name">Product name</message>
+    <message id="check_out.in_stock">In stock</message>
+    <message id="check_out.unit_price">Unit price</message>
+    <message id="check_out.total">Total</message>
+    <message id="check_out.total_cart_value">Total cart value</message>
+    <message id="check_out.shipping">Shipping (more info)</message>
+    <message id="check_out.total_ex_vat">Total ex. VAT</message>
+
+    <message id="check_out.your_information">Your information</message>
+    <message id="check_out.user_name">User name:</message>
+    <message id="check_out.password">Password:</message>
+    <message id="check_out.forgot_password">Forgot password</message>
+    <message id="check_out.register_new_account">Register new account</message>
+    <message id="check_out.error.login">Invalid username or password.</message>
+    <message id="check_out.error.need_to_login">Need to login first.</message>
+    <message id="check_out.error.need_to_accept_t_and_c">Need to accept terms and conditions.</message>
+
+    <message id="payment.payment_methd">Payment method</message>
+    <message id="payment.credit_card">Credit card</message>
+    <message id="check_out.pay_pal">Pay pal</message>
+
+    <message id="check_out.confirm">Confirm</message>
+    <message id="check_out.accept_terms_and_cond">I accept terms of agreement (Read terms)</message>
+    <message id="check_out.part_deliver">I want partial delivery (Shipping cost will be charged for each delivery.)</message>
+
+    <message id="user_widget.error.notMatchingPassword">Confirmation password doen't match password.</message>
+
+    <message id="footer.faq">
+        <h1>FAQ</h1>
+        Senast ändrad 2010-02-03<br/>
+
+        <h2>Ingår moms?</h2>
+        <p>Ja, moms ingår i alla priser.</p>
+
+        <h2>Vilka betalningsvillkor gäller?</h2>
+        <p>Alla beställningar med leveransaddress i Sverige har följande betalningssätt</p>
+        <ul>
+        <li>Visa/Mastercard - via vår sammarbetspartner Farepayment.</li>
+        <li>
+        Faktura - Vi utför en enklare kreditkontroll via Creditsafe på alla faktura
+        betalningar, denna kommer ej synas eller sparas i något register.<br/>
+        <br/>
+        Betalningsvillkor är 10 dagar netto.<br/>
+        Obetalda fakturor debiteras med 50 kronor plus dröjsmålsränta a 5% per månad.<br/>
+        Order under 150kr faktureras ej<br/>
+        </li>
+        </ul>
+
+        <h2>Leverar ni utomlands?</h2>
+        <p>Nej, vi levererar endast våra produkter till Svenska adresser.</p>
+
+        <h2>Hur lång är leveranstiden</h2>
+        För att kunna hålla ner priserna har vi ett begränsat lager, vilket medför
+        en något längre leveranstid än många andra webshoppar. Varje produkt
+        viser en ungefärlig leveranstid.<br/>
+        <br/>
+        De varor som vi har i lager skickas oftast inom 48 timmar, vid många
+        ordrar kan det ta upp mot 7 arbetsdagar innan din order skickas.
+
+        <h2>Vilka leveranssätt och fraktkostnader erbjuder ni?</h2>
+        Vi använder oss uteslutande av de tjänster som erbjuds genom Posten AB.<br/>
+        <br/>
+        De fraktalternativ som erbjuds och dess kostnader finner du kundvagnen.<br/>
+        <br/>
+        Vid leverans med 1:a klass brev tar Awxire AB ej ansvar för försändelsen.<br/>
+        <br/>
+        Vid överenskommelse går det även att hämta beställda varor på Linnegatan 7 i Stockholm och
+        Styrbjörnsvägen 29 i Hägersten.
+
+        <h2>Kan jag lämna tillbaka min vara?</h2>
+        <p>
+        ***På produkter som ej har anpassats/modifierats enligt dina önskemål kan du som kund enligt
+        Distans- och hemförsäljningslagen ångra ditt köp inom 14 dagar efter det att du har tagit emot varan.<br/>
+        <br/>
+        För att ångerrätten skall gälla komponenter som är känsliga för statisk elektrisitet får antistatpåsen ej vara öppnad.<br/>
+        <br/>
+        Ångerrätt och öppet köp gäller ej företag.<br/>
+        <br/>
+        Vid en eventuell retur får du full ersättning för dina utlägg, inklusive kostnaden för returfrakten.
+        Innan en eventuell retur, kontakta info@m.nu
+        </p>
+
+        <h2>Vad händer om jag inte hämtar mitt paket på posten</h2>
+        <p>***Outlösta paket debiteras med 250kr (ink moms) + 35% av ordervärdet.</p>
+
+        <h2>Vilken Garanti har produkterna</h2>
+        <p>
+        ***Alla produkter är noga funktionskontrollerade innan leverans. Om något trots detta inte skulle fungera
+        som förväntat går det bra att reklamera enligt de tidsramar som är fastställda i gällande lagar. På
+        nät som du själv har modifierat/skarvat ges enbart garanti för att sensorer och adaptrar fungerar var för sig.<br/>
+        <br/>
+        Vid ett garantiärende står Freiholtz Consulting för alla fraktkostnader.
+        </p>
+
+        <h2>Vilken sekretess policy har ni?</h2>
+        <p>***Alla uppgifter gällande kunder och köp/betalningar kommer ej att spridas vidare.</p>
+
+        <h2>Friskrivning från ansvar</h2>
+        <p>
+        ***Awxire AB tar ej något ansvar för någon skada
+        (Till exempel, men ej begränsat till: Fysisk/materiell/ekonomisk) som har uppkommit
+        efter att ha använt någon av de produkter eller tjänster som köpts via Freiholtz Consulting/www.m.nu.
+        </p>
+
+        <h2>Reservation</h2>
+        <p>***Vi reserverar oss mot felaktigheter i prislista och innehåll på webbsidan.</p>
+    </message>
+
+    <message id="footer.contact_us">
+        <h1>Kontakta oss</h1>
+        <h2>Adress</h2>
+        <p>
+        Awxire AB<br/>
+        Styrbjörnsvägen 29<br/>
+        126 51 HÄGERSTEN<br/>
+        SVERIGE<br/>
+        </p>
+        <h2>Epost</h2>
+        <p>amivono@cybercow.se</p>
+        <h2>Telefon</h2>
+        <p>
+        073-626 54 49 Vi befinner oss inte alltid på kontoret villket
+        medför att vi inte alltid har möjlighet att svara i telefon. Enklast
+        når du oss vi Epost, om du önskar prata med oss kan vi ringa ringa tillbaka.
+        </p>
+    </message>
+
+    <message id="footer.about_us">
+        <h1>Om oss</h1>
+        <p>Amivono.com och Awxire AB drivs av mig Daniel Lindh. Jag är en
+        teknik entusiast som känner mig lurad på 2000 talet. Alla sci-fi filmer
+        och böcker som utgavs på 80 och 90 talet lovade flygande bilar, androider,
+        cyborgs, avancerade AIs som pratade med sina husägare och fula kläder.
+        Det enda löftet som infriats är väl då det här med kläderna. Med
+        denna webshop vill jag dra mitt strå till stacken, och gör det enklare
+        att åtminstone automatisera hemmet. Så vi har något att roa oss med tills
+        det finns tillgång på rymdskepp och tidsresor.
+        </p>
+    </message>
+
+
+
+
+
+    <message id="BELOW_IS_NOT_OK">
+
+
+
+        BELOW_IS_NOT_OK
+
+
+
+
+    </message>
+
+    <message id="mainnav.Produkter">
+        <h1>Produkter</h1>
+        <h2>Cras ut turpis vel lectus gravida</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis, turpis non fermentum pretium, dui justo elementum nisi, quis placerat massa turpis in augue. Etiam aliquam eleifend nulla, rutrum blandit lorem feugiat sit amet. Fusce placerat fermentum velit eget faucibus. Cras quis ipsum justo. Donec cursus, nunc sed lacinia gravida, libero quam porttitor lectus, tempus pellentesque felis dolor vitae felis. In hac habitasse platea dictumst. Vivamus sit amet sagittis quam. Curabitur et nunc lorem, in suscipit purus. Nam ac orci eget orci feugiat tincidunt quis quis nulla. Integer tincidunt gravida sodales. Nam ac elit ante, quis facilisis nisl. Nam faucibus cursus posuere. Curabitur molestie mollis nulla sodales auctor. Nulla ut lobortis lectus. Ut a enim sit amet ante dictum vehicula a ut velit. Nunc in vestibulum dui. Integer cursus, metus quis laoreet ultricies, felis neque condimentum urna, convallis pulvinar elit libero ut metus. Praesent eget neque sed sapien cursus blandit eu et enim. Duis a nisl in leo vestibulum consectetur id sit amet nisl. Praesent sed neque non erat consequat condimentum. </p>
+        <p>Cum sociis natoque penatibus <a href="#"><strong>et magnis dis parturient</strong></a> montes, nascetur ridiculus mus. Sed at urna a magna volutpat porttitor id fermentum odio. Duis ultrices commodo fermentum. Mauris sit amet interdum enim. Praesent facilisis bibendum lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque dignissim quam ut malesuada. Sed orci nisi, suscipit a tincidunt non, vulputate nec leo. Quisque imperdiet mattis rutrum. Vestibulum at dolor mauris, at egestas lacus. Fusce varius, ligula ut pharetra scelerisque, enim mi vehicula dui, non aliquet enim est ac felis. </p>
+    </message>
+
+    <message id="mainnav.Inspiration">
+        <h1>Inspiration</h1>
+        <h2>Cras ut turpis vel lectus gravida</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis, turpis non fermentum pretium, dui justo elementum nisi, quis placerat massa turpis in augue. Etiam aliquam eleifend nulla, rutrum blandit lorem feugiat sit amet. Fusce placerat fermentum velit eget faucibus. Cras quis ipsum justo. Donec cursus, nunc sed lacinia gravida, libero quam porttitor lectus, tempus pellentesque felis dolor vitae felis. In hac habitasse platea dictumst. Vivamus sit amet sagittis quam. Curabitur et nunc lorem, in suscipit purus. Nam ac orci eget orci feugiat tincidunt quis quis nulla. Integer tincidunt gravida sodales. Nam ac elit ante, quis facilisis nisl. Nam faucibus cursus posuere. Curabitur molestie mollis nulla sodales auctor. Nulla ut lobortis lectus. Ut a enim sit amet ante dictum vehicula a ut velit. Nunc in vestibulum dui. Integer cursus, metus quis laoreet ultricies, felis neque condimentum urna, convallis pulvinar elit libero ut metus. Praesent eget neque sed sapien cursus blandit eu et enim. Duis a nisl in leo vestibulum consectetur id sit amet nisl. Praesent sed neque non erat consequat condimentum. </p>
+        <p>Cum sociis natoque penatibus <a href="#"><strong>et magnis dis parturient</strong></a> montes, nascetur ridiculus mus. Sed at urna a magna volutpat porttitor id fermentum odio. Duis ultrices commodo fermentum. Mauris sit amet interdum enim. Praesent facilisis bibendum lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque dignissim quam ut malesuada. Sed orci nisi, suscipit a tincidunt non, vulputate nec leo. Quisque imperdiet mattis rutrum. Vestibulum at dolor mauris, at egestas lacus. Fusce varius, ligula ut pharetra scelerisque, enim mi vehicula dui, non aliquet enim est ac felis. </p>
+    </message>
+
+    <message id="mainnav.Artiklar">
+        <h1>Artiklar</h1>
+        <h2>Cras ut turpis vel lectus gravida</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis, turpis non fermentum pretium, dui justo elementum nisi, quis placerat massa turpis in augue. Etiam aliquam eleifend nulla, rutrum blandit lorem feugiat sit amet. Fusce placerat fermentum velit eget faucibus. Cras quis ipsum justo. Donec cursus, nunc sed lacinia gravida, libero quam porttitor lectus, tempus pellentesque felis dolor vitae felis. In hac habitasse platea dictumst. Vivamus sit amet sagittis quam. Curabitur et nunc lorem, in suscipit purus. Nam ac orci eget orci feugiat tincidunt quis quis nulla. Integer tincidunt gravida sodales. Nam ac elit ante, quis facilisis nisl. Nam faucibus cursus posuere. Curabitur molestie mollis nulla sodales auctor. Nulla ut lobortis lectus. Ut a enim sit amet ante dictum vehicula a ut velit. Nunc in vestibulum dui. Integer cursus, metus quis laoreet ultricies, felis neque condimentum urna, convallis pulvinar elit libero ut metus. Praesent eget neque sed sapien cursus blandit eu et enim. Duis a nisl in leo vestibulum consectetur id sit amet nisl. Praesent sed neque non erat consequat condimentum. </p>
+        <p>Cum sociis natoque penatibus <a href="#"><strong>et magnis dis parturient</strong></a> montes, nascetur ridiculus mus. Sed at urna a magna volutpat porttitor id fermentum odio. Duis ultrices commodo fermentum. Mauris sit amet interdum enim. Praesent facilisis bibendum lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque dignissim quam ut malesuada. Sed orci nisi, suscipit a tincidunt non, vulputate nec leo. Quisque imperdiet mattis rutrum. Vestibulum at dolor mauris, at egestas lacus. Fusce varius, ligula ut pharetra scelerisque, enim mi vehicula dui, non aliquet enim est ac felis. </p>
+    </message>
+
+    <message id="mainnav.Forum">
+        <h1>Forum</h1>
+        <h2>Cras ut turpis vel lectus gravida</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis, turpis non fermentum pretium, dui justo elementum nisi, quis placerat massa turpis in augue. Etiam aliquam eleifend nulla, rutrum blandit lorem feugiat sit amet. Fusce placerat fermentum velit eget faucibus. Cras quis ipsum justo. Donec cursus, nunc sed lacinia gravida, libero quam porttitor lectus, tempus pellentesque felis dolor vitae felis. In hac habitasse platea dictumst. Vivamus sit amet sagittis quam. Curabitur et nunc lorem, in suscipit purus. Nam ac orci eget orci feugiat tincidunt quis quis nulla. Integer tincidunt gravida sodales. Nam ac elit ante, quis facilisis nisl. Nam faucibus cursus posuere. Curabitur molestie mollis nulla sodales auctor. Nulla ut lobortis lectus. Ut a enim sit amet ante dictum vehicula a ut velit. Nunc in vestibulum dui. Integer cursus, metus quis laoreet ultricies, felis neque condimentum urna, convallis pulvinar elit libero ut metus. Praesent eget neque sed sapien cursus blandit eu et enim. Duis a nisl in leo vestibulum consectetur id sit amet nisl. Praesent sed neque non erat consequat condimentum. </p>
+        <p>Cum sociis natoque penatibus <a href="#"><strong>et magnis dis parturient</strong></a> montes, nascetur ridiculus mus. Sed at urna a magna volutpat porttitor id fermentum odio. Duis ultrices commodo fermentum. Mauris sit amet interdum enim. Praesent facilisis bibendum lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque dignissim quam ut malesuada. Sed orci nisi, suscipit a tincidunt non, vulputate nec leo. Quisque imperdiet mattis rutrum. Vestibulum at dolor mauris, at egestas lacus. Fusce varius, ligula ut pharetra scelerisque, enim mi vehicula dui, non aliquet enim est ac felis. </p>
+    </message>
+
+    <message id="footer.sitemap">
+        <h1>Site map</h1>
+        <h2>Cras ut turpis vel lectus gravida</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis, turpis non fermentum pretium, dui justo elementum nisi, quis placerat massa turpis in augue. Etiam aliquam eleifend nulla, rutrum blandit lorem feugiat sit amet. Fusce placerat fermentum velit eget faucibus. Cras quis ipsum justo. Donec cursus, nunc sed lacinia gravida, libero quam porttitor lectus, tempus pellentesque felis dolor vitae felis. In hac habitasse platea dictumst. Vivamus sit amet sagittis quam. Curabitur et nunc lorem, in suscipit purus. Nam ac orci eget orci feugiat tincidunt quis quis nulla. Integer tincidunt gravida sodales. Nam ac elit ante, quis facilisis nisl. Nam faucibus cursus posuere. Curabitur molestie mollis nulla sodales auctor. Nulla ut lobortis lectus. Ut a enim sit amet ante dictum vehicula a ut velit. Nunc in vestibulum dui. Integer cursus, metus quis laoreet ultricies, felis neque condimentum urna, convallis pulvinar elit libero ut metus. Praesent eget neque sed sapien cursus blandit eu et enim. Duis a nisl in leo vestibulum consectetur id sit amet nisl. Praesent sed neque non erat consequat condimentum. </p>
+        <p>Cum sociis natoque penatibus <a href="#"><strong>et magnis dis parturient</strong></a> montes, nascetur ridiculus mus. Sed at urna a magna volutpat porttitor id fermentum odio. Duis ultrices commodo fermentum. Mauris sit amet interdum enim. Praesent facilisis bibendum lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque dignissim quam ut malesuada. Sed orci nisi, suscipit a tincidunt non, vulputate nec leo. Quisque imperdiet mattis rutrum. Vestibulum at dolor mauris, at egestas lacus. Fusce varius, ligula ut pharetra scelerisque, enim mi vehicula dui, non aliquet enim est ac felis. </p>
+    </message>
+</messages>

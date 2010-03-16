@@ -1,0 +1,247 @@
+ol, ul {
+        list-style: none;
+}
+
+form label {
+        cursor: pointer;
+}
+
+input, select, textarea {
+        font-size: 100%;
+        font-family: inherit;
+        background:#dbd5d5;
+        border: 0px solid #000000;
+        color: #2e2828;
+}
+
+p{
+        line-height: 1.4em;
+        font-size: 12px;
+}
+
+
+
+/*** LAYOUT ***/
+
+
+#search_top
+{
+        width: 210px;
+        float:right;
+        text-align:right;
+        margin-top: 0px;
+        font-size: 1.1em;
+        text-transform:uppercase;
+        position:relative;
+}
+
+#search_top label{
+        margin-right: 133px;
+        color: #fefefe;
+}
+
+#search_top input.textfield{
+        position:absolute;
+        top: 2px;
+        left: 85px;
+        background:#000000 !important;
+        border: none;
+        border-bottom: 1px solid #404040;
+        margin-top:-10px;
+        color:#FFFFFF;
+        padding: 3px;
+        width: 100px;
+}
+
+#search_top input.arrow{
+        position:absolute;
+        top: -4px;
+        right: -4px;
+        cursor: pointer;
+        background:url(images/btn_arrow.jpg) no-repeat;
+        border: none;
+        width: 16px;
+        height: 16px;
+}
+
+
+/*** POSITIONING ***/
+.clear{
+        clear:both;
+}
+
+
+
+/*********** CONTENT PAGE *************/
+
+
+
+div.top_sorting_panel{
+        margin: 16px 0;
+        position: relative;
+}
+
+select.sort{ width: 100px; }
+
+p.view_totals{
+        position:absolute;
+        left: 110px;
+        top: 0px;
+        font-size: 10px;
+}
+
+#content{
+        float: right;
+        width: 616px;
+}
+
+#content h1{
+        color:#FFC5CB;
+        font-size:2.5em;
+
+        line-height: 35px;
+}
+
+#content h2.medium{
+        color:#FFC5CB;
+        font-size:1.8em;
+        margin-bottom: 15px;
+}
+
+
+
+
+
+.about_wrapper{ margin: 36px; width: 546px; float:left; margin-bottom: 0; font-size:12px; line-height: 17px; }
+.about_wrapper .main_heading{ margin-bottom: 40px; }
+.about_wrapper h2{ margin-bottom: 15px; font-size: 18px; color: #ffc5cb; font-weight: normal; }
+.about_wrapper p{ margin-bottom: 20px; }
+
+
+
+/** Product page**/
+div.productimage{
+        float:left;
+        overflow:hidden;
+        position:relative;
+        width: 230px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+
+}
+div.productimage img{
+        width: 225px;
+        border:1px solid #666666;
+}
+
+div.producttext{
+        float:left;
+        overflow:hidden;
+        position:relative;
+        width: 605px;
+}
+
+div.contenttext
+{
+        float:left;
+        color: #CCCCCC;
+        line-height: 16px; /* this seems to push the flashcontent banner down! */
+        font-size: 11px;
+}
+
+
+
+
+
+
+div#banner div.banners {
+        float:right;
+        padding: 5px 5px 5px 5px;
+}
+
+div#banner div.bannerad_head {
+        background-image:url(images/banner_framed_bg.gif);
+        background-repeat: no-repeat;
+        width:160px;
+        /*height:24px;*/
+        padding:5px 0 5px 10px;
+        font-weight:bold;
+        font-size:10px;
+}
+div#banner div.bannerad_middel {
+        background-color:#191919;
+        width:148px;
+        padding:5px 10px 0 10px;
+        border-right:1px solid #666666;
+        border-left:1px solid #666666;
+        overflow: hidden;
+
+        color:#92C7FC;
+
+        font-size:11px;
+        line-height:16px;
+
+        color:#CCCCCC;
+}
+
+div#banner div.bannerad_middel a{
+        color:#92C7FC;
+}
+
+div#banner div.bannerad_end {
+        background-image:url(images/banner_framed_end_bg.gif);
+        width:160px;
+        height:20px;
+        padding:0 0 0 10px;
+        margin-bottom:15px;
+}
+
+
+div#information div.banners {
+        float:left;
+        padding: 5px 5px 5px 5px;
+}
+
+div#information div.bannerad_head {
+        background-image:url(images/informationFramedStartBg360.gif);
+        1background-repeat: no-repeat;
+        width:350px;
+        /*height:24px;*/
+        padding:5px 0 5px 10px;
+        font-weight:bold;
+        font-size:10px;
+}
+
+div#information div.bannerad_middel {
+        background-color:#191919;
+        width:354px;
+        padding:0px 2px 0 2px;
+        border-right:1px solid #666666;
+        border-left:1px solid #666666;
+        overflow: hidden;
+
+
+        font-size:11px;
+        line-height:16px;
+
+        color:#CCCCCC;
+}
+
+div#information div.bannerad_end {
+        background-image:url(images/informationFramedEndBg360.gif);
+        background-repeat: no-repeat;
+        width:350px;
+        height:5px;
+        background-position:bottom left;
+        padding:0 0 0 10px;
+        margin-bottom:15px;
+}
+
+div#information table.informationsquare {
+        width:353px;
+        color:#CCCCCC;
+}
+
+div#information table.informationsquare td{
+        padding:2px;
+}

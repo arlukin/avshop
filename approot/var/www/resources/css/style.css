@@ -1,0 +1,576 @@
+html
+{
+     overflow: -moz-scrollbars-vertical;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body, td, legend, label
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #CCCCCC;    
+}
+
+body
+{
+    background-color:#000000;
+}
+
+input, select, button, radio, textarea
+{
+    font-family: arial,helvetica,sans-serif;
+    font-size: 10px;
+    color: #000000;
+    margin: 0px 4px 0px 4px;
+}
+
+hr 
+{
+    border: 0;
+    color: #666666;
+    background-color: #666677;
+    height: 1px;
+}
+
+/************/
+/*** Menu ***/
+/************/
+a, a:link, a:visited, a.active, a.active:hover
+{
+        color: #92c7fc;
+        text-decoration: none;
+}
+
+.menu a
+{
+        text-align:center;
+        color:#fdc6cc;
+}
+
+a:hover
+{
+    color:#FFFFFF;
+}
+
+/**************/
+/*** Panels ***/
+/**************/
+.Wt-panel
+{
+    margin: 5px auto 5px 5px;
+    border: 1px solid #666677;
+    overflow:hidden;
+    
+    background-color:#191919;
+    background-image:url(/resources/images/spec_table_top.gif);
+    background-repeat:repeat-x;
+    background-position:top left;
+}
+
+.Wt-panel .titlebar
+{
+    padding: 3px 0px 3px 5px;
+    background: none;
+}
+
+.Wt-panel .body
+{
+    background: none;
+}
+
+.Wt-panel input, .Wt-panel textarea
+{    
+    background: #eae3da none repeat scroll 0 0 !important;    
+    border: 1px solid #eae3da;
+    width:250px;
+}
+
+.Wt-panel .body td
+{
+    padding: 1px 0px 2px 5px;
+}
+
+.button_container
+{
+    float:right;
+}
+
+/**************/
+/*** HEADER ***/
+/**************/
+
+.header
+{
+    width: 780px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.logo
+{
+    float:left;
+    margin: 5px 5px 5px 0;    
+}
+
+.logo a
+{    
+    display:block;
+    text-indent: -999em;
+    width: 367px;
+    height: 50px;
+    background:url(/resources/images/amivono_logo.gif) no-repeat;
+}
+
+.navigation
+{    
+    clear:right;
+    float:right;
+    margin-right: 10px;
+}
+
+.bread_crumbs
+{
+    float:left;
+    clear: both;    
+    width: 367px;
+    padding-left: 5px;
+}
+
+/**********/
+/** Body **/
+/**********/
+
+.body_back_top
+{
+    background:url(/resources/images/body_back_top.png) #4b4242 top repeat-x;
+    overflow:hidden;
+    width: 100%;
+}
+
+.body_back_bottom
+{
+    overflow:hidden;
+    width: 100%;
+    background:url(/resources/images/body_back_bottom.png) bottom repeat-x;
+}
+
+.body_top
+{
+    width: 780px;
+    overflow:hidden;
+    margin: 0 auto;
+    background: url(/resources/images/body_top.png) #252121 top no-repeat;
+}
+
+.body_bottom
+{
+    width: 780px;
+    overflow:hidden;
+    background: url(/resources/images/body_bottom.png) bottom no-repeat;
+}
+
+.body_content
+{
+    overflow:hidden;
+    width: 780px;
+    position:relative;
+    background: none;
+    #background-color: #111111;
+    #background-color:#2e282b;
+    background-color: #191919;
+    #color:#999999;
+}
+
+/************/
+/** Footer **/
+/************/
+.footer
+{
+    width: 780px;
+    margin: 0 auto;
+    line-height: 20px;
+    color:#cccccc;
+    padding-bottom: 20px;
+}
+
+.footer_left
+{
+    padding-left: 5px;
+    float:left;
+}
+
+.footer_right
+{
+    padding-right: 5px;
+    float:right;
+}
+
+.footer_right a
+{
+    padding-left: 6px;
+    padding-right: 6px;
+    background:url(/resources/images/footer_border.gif) 100% 4px no-repeat;
+}
+
+/**************/
+/** Cart box **/
+/**************/
+.cart_box
+{
+    margin-top: 4px;
+    width: 250px;
+    float: right;
+}
+
+.cart_image span
+{
+    display:block;
+    float:left;
+    text-indent: -999em;
+    width: 24px;
+    height: 21px;
+    background:url(/resources/images/cart.gif) no-repeat;
+}
+
+.cart_total
+{
+    font-weight:bold;
+}
+
+/*************/
+/** Article **/
+/*************/
+
+.article
+{    
+    padding: 25px 25px 25px 25px;
+    color: #ffc5cb;
+    font-size:12px;
+    line-height: 17px;
+}
+
+.article h1
+{
+    color:#FFC5CB;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.article h2
+{
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #ffc5cb;
+    font-weight: normal;
+}
+
+.article p
+{
+    margin-bottom: 15px;
+}
+
+/*************************/
+/*** ProductListWidget ***/
+/*************************/
+
+.side_panel
+{
+    float:left;
+    width: 134px;
+    padding: 0px 0px 0px 10px;
+}
+
+.side_panel h1
+{
+    text-align:center;
+    padding: 6px 0px 2px 0px;
+    font-size: 140%;
+}
+
+.side_nav a
+{
+    text-align:center;
+    display:block;
+    width: 128px;
+}
+ 
+.product_area
+{
+    margin-left:160px;
+}
+
+/******************/
+/*** Collection ***/
+/******************/
+.invisible
+{
+    visibility:hidden;
+}
+
+div.collection
+{
+        float: left;
+        width: 204px;
+        height: 204px;
+        overflow:hidden;
+        position:relative;        
+}
+
+div.fader
+{
+        width: 204px;
+        height: 204px;
+        background:url(/resources/images/fader.png) no-repeat;
+        position:absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        zoom:1;        
+}
+
+div.collection div.sale_label{
+        width: 85px;
+        height: 84px;
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 11;
+        background:url(/resources/images/sale_label.png) no-repeat;
+}
+
+div.collection div.offer_label{
+        width: 85px;
+        height: 84px;
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 11;
+        background:url(/resources/images/offer_label.png) no-repeat;
+}
+
+div.collection span.heading{
+        display:block;
+        width: 204px;
+        text-align:center;
+        color: #ffc5cb;
+        font-size: 20px;
+        line-height: 32px;
+        float:left;
+        cursor:pointer;
+        font-weight: normal;
+}
+
+div.collection span.desc{
+        display:block;
+        width: 154px;
+        margin: 0 auto;
+        text-align:center;
+        color: #fff;
+        font-size: 12px;
+        line-height: 13px;
+        cursor:pointer;
+        padding-top: 7px;
+        margin-bottom: 5px;
+        clear:both;
+}
+
+div.collection span.price{
+        display:block;
+        width: 204px;
+        text-align:center;
+        clear: both;
+        color: #fff;
+        font-size: 16px;
+        margin-top: 5px;
+        float:left;
+        cursor:pointer;
+}
+
+div.collection span.price_sale{
+        display:block; width:204px; text-align:center; clear: both; color: #ffc5cb; font-size: 16px; margin-top: 5px; float:left;
+        cursor:pointer;
+}
+
+div.collection span.price_sale span{
+        background: url(/resources/images/pink_dot.gif) repeat-x center left;
+        padding: 0 3px;
+        margin:0 auto 0 auto;
+}
+
+#price{
+        float: right;
+        background-color:#191919;
+        width:74px;
+        padding: 2px 0px 2px 0px;
+        border:1px solid #666666;
+        color:#92C7FC;
+        font-weight:bold;
+        text-align: center;
+}
+
+/**** ProductWidget **********/
+
+fieldset
+{
+    margin: 5px;
+    padding: 5;
+
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+
+    background-color:#191919;
+    padding:5px 10px 5px 10px;
+    border:1px solid #666677;
+
+    background-image:url(/resources/images/spec_table_top.gif);
+    background-repeat:repeat-x;
+    width: 280px;
+    float:right;
+}
+legend
+{
+    font-weight:bold;
+    font-size:10px;
+}
+.product td
+{
+    padding: 1px 3px 1px 3px;
+}
+.product
+{
+
+}
+
+.product img
+{
+    margin: 10px;
+    width: 280px;
+}
+
+.product h2
+{
+    font-weight:bold;
+    font-size:16px;    
+    line-height: 34px;
+}
+
+.product button
+{
+    float: right;
+}
+
+.product_price
+{
+    color:#92C7FC;
+    font-size:16px;
+    font-weight:bold;    
+
+}
+.product .article
+{
+    display:block;
+}
+.product br
+{
+    clear:both;        
+}
+
+/************/
+/** Check out panel **/
+/************/
+.check_out_panel
+{
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+.check_out_panel fieldset
+{
+    width: auto;
+    float: none;
+}
+
+.check_out_cart_table
+{
+    width:100%;
+}
+
+.check_out_cart_table .col0
+{
+    text-align: left;
+    width: 70px;
+}
+
+.check_out_cart_table .col1
+{
+    text-align: left;
+    width: auto;
+}
+
+.check_out_cart_table .col2,
+.check_out_cart_table .col3,
+.check_out_cart_table .col4
+{
+    text-align: right;
+    width: 70px;
+}
+
+.check_out_panel input
+{
+    width:100px;
+    margin:0px 5px 0px 5px;
+}
+
+.check_out_quantity_edit input
+{
+    width: 20px;
+}
+
+/************/
+/** Panels **/
+/************/
+
+.new_account_panel, .forgot_password_panel
+{
+    width: 450px;
+}
+
+.user_widget input
+{
+    width:250px;
+}
+
+/***********/
+/** Other **/
+/***********/
+
+.error
+{
+    color: red;
+    font-weight:bold;
+}

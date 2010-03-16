@@ -1,0 +1,373 @@
+<!DOCTYPE QtCreatorProject>
+<qtcreator>
+ <data>
+  <variable>RunConfiguration0-BaseEnvironmentBase</variable>
+  <value type="int">2</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-CMakeRunConfiguation.Title</variable>
+  <value type="QString">avShopBackEndTest</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-CMakeRunConfiguration.Arguments</variable>
+  <value type="QString"></value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-CMakeRunConfiguration.Target</variable>
+  <value type="QString">/home/arlukin/Dev/avshop/build/src/avshopbackend/avShopBackEndTest</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-CMakeRunConfiguration.UseTerminal</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-CMakeRunConfiguration.UserEnvironmentChanges</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration0-CMakeRunConfiguration.UserWorkingDirectory</variable>
+  <value type="QString"></value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-CMakeRunConfiguration.WorkingDirectory</variable>
+  <value type="QString">/home/arlukin/Dev/avshop/build/src/avshopbackend</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-RunConfiguration.name</variable>
+  <value type="QString">avShopBackEndTest</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-type</variable>
+  <value type="QString">CMakeProjectManager.CMakeRunConfiguration</value>
+ </data>
+ <data>
+  <variable>RunConfiguration1-Arguments</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">--deploy-path</value>
+   <value type="QString">/</value>
+   <value type="QString">--docroot</value>
+   <value type="QString">./var/www/</value>
+   <value type="QString">--config</value>
+   <value type="QString">./etc/wt_config.xml</value>
+   <value type="QString">--pid-file</value>
+   <value type="QString">/tmp/avshop.pid</value>
+   <value type="QString">--http-address</value>
+   <value type="QString">0.0.0.0</value>
+   <value type="QString">--http-port</value>
+   <value type="QString">8080</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>RunConfiguration1-BaseEnvironmentBase</variable>
+  <value type="int">2</value>
+ </data>
+ <data>
+  <variable>RunConfiguration1-Executable</variable>
+  <value type="QString">/home/arlukin/Dev/avshop/build/src/avshop/avshop</value>
+ </data>
+ <data>
+  <variable>RunConfiguration1-RunConfiguration.name</variable>
+  <value type="QString">avshop approot</value>
+ </data>
+ <data>
+  <variable>RunConfiguration1-UseTerminal</variable>
+  <value type="bool">true</value>
+ </data>
+ <data>
+  <variable>RunConfiguration1-UserEnvironmentChanges</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration1-UserName</variable>
+  <value type="QString">avshop approot</value>
+ </data>
+ <data>
+  <variable>RunConfiguration1-UserSetName</variable>
+  <value type="bool">true</value>
+ </data>
+ <data>
+  <variable>RunConfiguration1-WorkingDirectory</variable>
+  <value type="QString">/home/arlukin/Dev/avshop/approot/</value>
+ </data>
+ <data>
+  <variable>RunConfiguration1-type</variable>
+  <value type="QString">ProjectExplorer.CustomExecutableRunConfiguration</value>
+ </data>
+ <data>
+  <variable>RunConfiguration2-BaseEnvironmentBase</variable>
+  <value type="int">2</value>
+ </data>
+ <data>
+  <variable>RunConfiguration2-CMakeRunConfiguation.Title</variable>
+  <value type="QString">avshop</value>
+ </data>
+ <data>
+  <variable>RunConfiguration2-CMakeRunConfiguration.Arguments</variable>
+  <value type="QString"></value>
+ </data>
+ <data>
+  <variable>RunConfiguration2-CMakeRunConfiguration.Target</variable>
+  <value type="QString">/home/arlukin/Dev/avshop/build/src/avshop/avshop</value>
+ </data>
+ <data>
+  <variable>RunConfiguration2-CMakeRunConfiguration.UseTerminal</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration2-CMakeRunConfiguration.UserEnvironmentChanges</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration2-CMakeRunConfiguration.UserWorkingDirectory</variable>
+  <value type="QString"></value>
+ </data>
+ <data>
+  <variable>RunConfiguration2-CMakeRunConfiguration.WorkingDirectory</variable>
+  <value type="QString">/home/arlukin/Dev/avshop/build/src/avshop</value>
+ </data>
+ <data>
+  <variable>RunConfiguration2-RunConfiguration.name</variable>
+  <value type="QString">avshop</value>
+ </data>
+ <data>
+  <variable>RunConfiguration2-type</variable>
+  <value type="QString">CMakeProjectManager.CMakeRunConfiguration</value>
+ </data>
+ <data>
+  <variable>RunConfiguration3-BaseEnvironmentBase</variable>
+  <value type="int">2</value>
+ </data>
+ <data>
+  <variable>RunConfiguration3-CMakeRunConfiguation.Title</variable>
+  <value type="QString">avshopdbinstall</value>
+ </data>
+ <data>
+  <variable>RunConfiguration3-CMakeRunConfiguration.Arguments</variable>
+  <value type="QString"></value>
+ </data>
+ <data>
+  <variable>RunConfiguration3-CMakeRunConfiguration.Target</variable>
+  <value type="QString">/home/arlukin/Dev/avshop/build/src/avshopdbinstall/avshopdbinstall</value>
+ </data>
+ <data>
+  <variable>RunConfiguration3-CMakeRunConfiguration.UseTerminal</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration3-CMakeRunConfiguration.UserEnvironmentChanges</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration3-CMakeRunConfiguration.UserWorkingDirectory</variable>
+  <value type="QString"></value>
+ </data>
+ <data>
+  <variable>RunConfiguration3-CMakeRunConfiguration.WorkingDirectory</variable>
+  <value type="QString">/home/arlukin/Dev/avshop/build/src/avshopdbinstall</value>
+ </data>
+ <data>
+  <variable>RunConfiguration3-RunConfiguration.name</variable>
+  <value type="QString">avshopdbinstall</value>
+ </data>
+ <data>
+  <variable>RunConfiguration3-type</variable>
+  <value type="QString">CMakeProjectManager.CMakeRunConfiguration</value>
+ </data>
+ <data>
+  <variable>RunConfiguration4-BaseEnvironmentBase</variable>
+  <value type="int">2</value>
+ </data>
+ <data>
+  <variable>RunConfiguration4-CMakeRunConfiguation.Title</variable>
+  <value type="QString">avUtilsTest</value>
+ </data>
+ <data>
+  <variable>RunConfiguration4-CMakeRunConfiguration.Arguments</variable>
+  <value type="QString"></value>
+ </data>
+ <data>
+  <variable>RunConfiguration4-CMakeRunConfiguration.Target</variable>
+  <value type="QString">/home/arlukin/Dev/avshop/build/src/avutils/avUtilsTest</value>
+ </data>
+ <data>
+  <variable>RunConfiguration4-CMakeRunConfiguration.UseTerminal</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration4-CMakeRunConfiguration.UserEnvironmentChanges</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration4-CMakeRunConfiguration.UserWorkingDirectory</variable>
+  <value type="QString">/home/arlukin/Dev/avshop/</value>
+ </data>
+ <data>
+  <variable>RunConfiguration4-CMakeRunConfiguration.WorkingDirectory</variable>
+  <value type="QString">/home/arlukin/Dev/avshop/build/src/avutils</value>
+ </data>
+ <data>
+  <variable>RunConfiguration4-RunConfiguration.name</variable>
+  <value type="QString">avUtilsTest</value>
+ </data>
+ <data>
+  <variable>RunConfiguration4-type</variable>
+  <value type="QString">CMakeProjectManager.CMakeRunConfiguration</value>
+ </data>
+ <data>
+  <variable>activeRunConfiguration</variable>
+  <value type="int">0</value>
+ </data>
+ <data>
+  <variable>activebuildconfiguration</variable>
+  <value type="QString">all</value>
+ </data>
+ <data>
+  <variable>buildConfiguration-all</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">all</value>
+   <value key="buildDirectory" type="QString">/home/arlukin/Dev/avshop/build</value>
+   <value key="msvcVersion" type="QString"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-all-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">all</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-j98N2uyaX5,guid=1d51554691183fdfbbbb781f4b9b5ca9</value>
+    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">GDMSESSION=gnome</value>
+    <value type="QString">GDM_KEYBOARD_LAYOUT=se</value>
+    <value type="QString">GDM_LANG=en_US.UTF-8</value>
+    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
+    <value type="QString">GNOME_KEYRING_PID=3543</value>
+    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-7ZYK8g/socket</value>
+    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/arlukin/.gtkrc-1.2-gnome2</value>
+    <value type="QString">HOME=/home/arlukin</value>
+    <value type="QString">LANG=en_US.UTF-8</value>
+    <value type="QString">LD_LIBRARY_PATH=/opt/qtsdk-2010.01/lib/qtcreator:</value>
+    <value type="QString">LIBGL_DRIVERS_PATH=/usr/lib/dri</value>
+    <value type="QString">LOGNAME=arlukin</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-arlukin</value>
+    <value type="QString">PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/arlukin</value>
+    <value type="QString">SESSION_MANAGER=local/arlukin-desktop:@/tmp/.ICE-unix/3558,unix/arlukin-desktop:/tmp/.ICE-unix/3558</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SPEECHD_PORT=7560</value>
+    <value type="QString">SSH_AGENT_PID=3600</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-7ZYK8g/socket.ssh</value>
+    <value type="QString">USER=arlukin</value>
+    <value type="QString">USERNAME=arlukin</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-arlukin-yHbeFc/database</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
+    <value type="QString">XDG_SESSION_COOKIE=db4b8f434f1f28785067752d4b25e4a1-1268473000.984077-852725565</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">avshopdbinstall</value>
+    <value type="QString">avshop</value>
+    <value type="QString">avShopBackEndTest</value>
+    <value type="QString">avUtilsTest</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/arlukin/Dev/avshop/build</value>
+   <valuelist key="buildTargets" type="QVariantList">
+    <value type="QString">avshopdbinstall</value>
+    <value type="QString">avshop</value>
+    <value type="QString">avShopBackEndTest</value>
+    <value type="QString">avUtilsTest</value>
+   </valuelist>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-all-cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">all</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-aKUIaCNaDk,guid=eb750cf2e3cb908a17cffcc44b8c2414</value>
+    <value type="QString">DESKTOP_AUTOSTART_ID=1092cd559130ce69312674754778216300000028970001</value>
+    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">GDMSESSION=gnome</value>
+    <value type="QString">GDM_KEYBOARD_LAYOUT=se</value>
+    <value type="QString">GDM_LANG=en_US.UTF-8</value>
+    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
+    <value type="QString">GNOME_KEYRING_PID=2882</value>
+    <value type="QString">GNOME_KEYRING_SOCKET=/tmp/keyring-6zV62c/socket</value>
+    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/arlukin/.gtkrc-1.2-gnome2</value>
+    <value type="QString">HOME=/home/arlukin</value>
+    <value type="QString">LANG=en_US.UTF-8</value>
+    <value type="QString">LD_LIBRARY_PATH=/opt/qtsdk-2010.01/lib/qtcreator:</value>
+    <value type="QString">LIBGL_DRIVERS_PATH=/usr/lib/dri</value>
+    <value type="QString">LOGNAME=arlukin</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-arlukin</value>
+    <value type="QString">PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/arlukin</value>
+    <value type="QString">SESSION_MANAGER=local/arlukin-desktop:@/tmp/.ICE-unix/2897,unix/arlukin-desktop:/tmp/.ICE-unix/2897</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SPEECHD_PORT=7560</value>
+    <value type="QString">SSH_AGENT_PID=2939</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-6zV62c/socket.ssh</value>
+    <value type="QString">USER=arlukin</value>
+    <value type="QString">USERNAME=arlukin</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-arlukin-OeNk2w/database</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
+    <value type="QString">XDG_SESSION_COOKIE=db4b8f434f1f28785067752d4b25e4a1-1267475476.56758-280581234</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">true</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">clean</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/arlukin/Dev/avshop/build</value>
+   <valuelist key="additionalArguments" type="QVariantList">
+    <value type="QString">clean</value>
+   </valuelist>
+   <value key="cleanConfig" type="bool">true</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfigurations</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">all</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildsteps</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">CMakeProjectManager.MakeStep</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+   <value key="clean" type="bool">true</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>cleansteps</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">CMakeProjectManager.MakeStep</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>defaultFileEncoding</variable>
+  <value type="QByteArray">System</value>
+ </data>
+ <data>
+  <variable>project</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+</qtcreator>
