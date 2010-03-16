@@ -2,7 +2,6 @@
 #include "products/Products.h"
 #include "products/ProductTypes.h"
 #include "products/OrderHeaders.h"
-#include "user/UserAccount.h"
 #include "user/User.h"
 #include "user/ActionGroup.h"
 using namespace av;
@@ -51,11 +50,6 @@ Products* ShopDb::getProducts()
 OrderHeaders* ShopDb::getOrderHeaders()
 {
     return new OrderHeaders(*getSession());
-}
-
-UserAccount* ShopDb::getUserAccount()
-{
-    return new UserAccount(*getSession());
 }
 
 User* ShopDb::getUser()

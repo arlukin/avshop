@@ -12,7 +12,6 @@
 using namespace Wt;
 
 #include "products/Product.h"
-#include "user/UserAccount.h"
 #include "user/User.h"
 #include "user/ActionGroup.h"
 using namespace av;
@@ -25,7 +24,7 @@ using namespace av;
 #include "CheckOutPanel/CheckOutPanel.h"
 
 ShopApplication::ShopApplication(const WEnvironment& env)
-    : WApplication(env), _userAccount(0), _checkOutPanel(0)
+    : WApplication(env), _user(0), _checkOutPanel(0)
 {
     _createPage();
 }
@@ -43,8 +42,8 @@ void ShopApplication::addToCart(const Product *product_)
 
 bool ShopApplication::saveCart()
 {
-    userAccount().save();
-    cart().orginator() = userAccount().contact();
+    user().save();
+    cart().orginator() = user().contact();
     cart().save(*db()->getSession());
     cart().clear();
     _rebuildCart();
@@ -57,14 +56,14 @@ OrderHeader & ShopApplication::cart()
     return _cart;
 }
 
-UserAccount & ShopApplication::userAccount()
+User & ShopApplication::user()
 {
-    if (_userAccount == 0)
+    if (_user == 0)
     {
-        _userAccount = db()->getUserAccount();
+        _user = db()->getUser();
     }
 
-    return *_userAccount;
+    return *_user;
 }
 
 void ShopApplication::_onCheckOut()

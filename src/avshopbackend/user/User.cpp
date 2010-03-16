@@ -17,7 +17,7 @@ User::User(soci::session* session_)
 bool User::login(const std::string userName_, const std::string password_)
 {    
     _load(userName_, password_);
-    if (userAccountId())
+    if (userId())
     {
         _logedIn = true;
     }
@@ -50,9 +50,9 @@ bool User::isDeletable(const action_t& actionId_) const
     return _actions.isDeletable(actionId_);
 }
 
-int User::userAccountId() const
+int User::userId() const
 {
-    return _userAccountId;
+    return _userId;
 }
 
 void User::setUserName(const std::string& userName_)
@@ -78,7 +78,7 @@ Contact& User::contact()
 
 void User::clear()
 {
-    _userAccountId = 0;
+    _userId = 0;
     _userName.clear();
     _password.clear();    
     _contact.clear();;
@@ -87,16 +87,16 @@ void User::clear()
     _logedIn = false;
 }
 
-void User::load(const int& userAccountId_)
+void User::load(const int& userId_)
 {
-    rowset<row> rs = (_session.prepare << _selectQuery(userAccountId_));
+    rowset<row> rs = (_session.prepare << _selectQuery(userId_));
     _loadFromRowset(rs);
-    _actions.load(userAccountId_);
+    _actions.load(userId_);
 }
 
 int User::save()
 {
-    if (userAccountId())
+    if (userId())
     {
         _update();
     }
@@ -105,15 +105,15 @@ int User::save()
         _insert();
     }
 
-    return userAccountId();
+    return userId();
 }
 
 void User::destroy()
 {
-    if (userAccountId())
+    if (userId())
     {
-        _session << "DELETE FROM UserAccount WHERE userAccountId = :userAccountId",
-        use(userAccountId(), "userAccountId");
+        _session << "DELETE FROM User WHERE userId = :userId",
+        use(userId(), "userId");
     }
     clear();
 }
@@ -123,9 +123,9 @@ void User::_load(const std::string userName_, const std::string password_)
     rowset<row> rs = (_session.prepare << _selectQuery(userName_, password_));
     _loadFromRowset(rs);
 
-    if (userAccountId())
+    if (userId())
     {
-        _actions.load(userAccountId());
+        _actions.load(userId());
     }
 }
 
@@ -135,7 +135,7 @@ void User::_loadFromRowset(const rowset<row>& rs)
 
     BOOST_FOREACH(row & row, rs)
     {
-        _userAccountId = row.get<int>("userAccountId");
+        _userId = row.get<int>("userId");
         _userName = row.get<string>("userName");
 
         _contact = Contact
@@ -159,14 +159,14 @@ void User::_insert()
     contact().save(_session);
 
     _session <<
-    "INSERT INTO UserAccount "
+    "INSERT INTO User "
     "(userName, password, contactId) "
     "VALUES (:userName, :password, :contactId)",
     use(userName(), "userName"),
     use(_password, "password"),
     use(contact().contactId(), "contactId");
 
-    _session << "SELECT last_insert_id()", into(_userAccountId);
+    _session << "SELECT last_insert_id()", into(_userId);
 }
 
 void User::_update()
@@ -176,26 +176,26 @@ void User::_update()
     if (_password.empty())
     {
         _session <<
-        "UPDATE UserAccount "
+        "UPDATE User "
         "SET "
         "  userName = :userName "
         "WHERE "
-        "  userAccountId = :userAccountId",
+        "  userId = :userId",
         use(userName(), "userName"),
-        use(userAccountId(), "userAccountId");
+        use(userId(), "userId");
     }
     else
     {
         _session <<
-        "UPDATE UserAccount "
+        "UPDATE User "
         "SET "
         "  userName = :userName, "
         "  password = :password "
         "WHERE "
-        "  userAccountId = :userAccountId",
+        "  userId = :userId",
         use(userName(), "userName"),
         use(_password, "password"),
-        use(userAccountId(), "userAccountId");
+        use(userId(), "userId");
     }
 }
 
@@ -203,7 +203,7 @@ std::string User::_selectBase()
 {
     return
         "SELECT "
-        "  userAccountId, "
+        "  userId, "
         "  userName, "
         "  contactId, "
         "  firstName, "
@@ -216,16 +216,16 @@ std::string User::_selectBase()
         "  email, "
         "  webUrl "
         "FROM "
-        "  UserAccount "
+        "  User "
         "  INNER JOIN Contact USING (contactId)"
         "WHERE ";
 }
 
-std::string User::_selectQuery(const int userAccountId_)
+std::string User::_selectQuery(const int userId_)
 {
     std::string query;
     query += _selectBase();
-    query += "  userAccountId = " + boost::lexical_cast<std::string>(userAccountId_);
+    query += "  userId = " + boost::lexical_cast<std::string>(userId_);
     query += " LIMIT 0, 1";
 
     return query;

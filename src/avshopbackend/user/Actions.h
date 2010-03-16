@@ -25,12 +25,12 @@ public:
     void setAction(const action_t& actionId_, const int permissions_ = ALL);
 
     void clear();
-    void load(const int& userAccountId_);
+    void load(const int& userId_);
     void save(const int& actionGroupId_);
     void destroy(const int& actionGroupId_);
 
 private:
-    std::string _selectQuery(const int& userAccountId_);
+    std::string _selectQuery(const int& userId_);
     void _insert(const int& actionGroupId_);
     void _delete(const int& actionGroupId_);
 

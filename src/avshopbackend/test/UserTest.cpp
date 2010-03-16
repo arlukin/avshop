@@ -43,7 +43,7 @@ BOOST_AUTO_TEST_CASE( UserAddTest )
     user.save();
 
     // Test
-    BOOST_WARN_GT(user.userAccountId(), 0);
+    BOOST_WARN_GT(user.userId(), 0);
     BOOST_CHECK_EQUAL(user.userName(), "Case");
     BOOST_CHECK_EQUAL(user.contact().firstName(), "Henry Dorsett");
     BOOST_CHECK_EQUAL(user.contact().lastName(), "Case");
@@ -56,7 +56,7 @@ BOOST_AUTO_TEST_CASE( UserAddTest )
     BOOST_CHECK_EQUAL(user.contact().webUrl(), "www.cybercow.se");
 
     //
-    userId = user.userAccountId();
+    userId = user.userId();
 }
 
 BOOST_AUTO_TEST_CASE( UserLoginNoPermissionTest )
@@ -74,7 +74,7 @@ BOOST_AUTO_TEST_CASE( UserLoginNoPermissionTest )
     BOOST_CHECK_EQUAL(user.isDeletable(Action::UserProfile), false);
     BOOST_CHECK_EQUAL(user.hasAccess(Action::UserProfile), false);
 
-    BOOST_CHECK_EQUAL(user.userAccountId(), userId);
+    BOOST_CHECK_EQUAL(user.userId(), userId);
     BOOST_CHECK_EQUAL(user.userName(), "Case");
     BOOST_CHECK_EQUAL(user.contact().firstName(), "Henry Dorsett");
     BOOST_CHECK_EQUAL(user.contact().lastName(), "Case");
@@ -138,7 +138,7 @@ BOOST_AUTO_TEST_CASE( UserActionGroupAddTest )
     actionGroup.setAction(Action::ShopProperties, READ);
     actionGroup.setAction(Action::ShopProperties, WRITE);
     actionGroup.setAction(Action::Orders, READ | WRITE);
-    actionGroup.addUser(user.userAccountId());
+    actionGroup.addUser(user.userId());
     actionGroup.save();
 
     // Test
@@ -185,7 +185,7 @@ BOOST_AUTO_TEST_CASE( UserLoginTest )
     BOOST_CHECK_EQUAL(user.isDeletable(Action::Orders), false);
     BOOST_CHECK_EQUAL(user.hasAccess(Action::Orders), false);
 
-    BOOST_CHECK_EQUAL(user.userAccountId(), userId);
+    BOOST_CHECK_EQUAL(user.userId(), userId);
     BOOST_CHECK_EQUAL(user.userName(), "Case");
     BOOST_CHECK_EQUAL(user.contact().firstName(), "Henry Dorsett");
     BOOST_CHECK_EQUAL(user.contact().lastName(), "Case");
@@ -236,7 +236,7 @@ BOOST_AUTO_TEST_CASE( UserUpdateTest )
     BOOST_CHECK_EQUAL(user.isDeletable(Action::Orders), false);
     BOOST_CHECK_EQUAL(user.hasAccess(Action::Orders), false);
 
-    BOOST_CHECK_EQUAL(user.userAccountId(), userId);
+    BOOST_CHECK_EQUAL(user.userId(), userId);
     BOOST_CHECK_EQUAL(user.userName(), "Molly");
     BOOST_CHECK_EQUAL(user.contact().firstName(), "Molly");
     BOOST_CHECK_EQUAL(user.contact().lastName(), "Millons");
@@ -274,7 +274,7 @@ BOOST_AUTO_TEST_CASE( UserUpdateLoadTest )
     BOOST_CHECK_EQUAL(user.isDeletable(Action::Orders), false);
     BOOST_CHECK_EQUAL(user.hasAccess(Action::Orders), false);
 
-    BOOST_CHECK_EQUAL(user.userAccountId(), userId);
+    BOOST_CHECK_EQUAL(user.userId(), userId);
     BOOST_CHECK_EQUAL(user.userName(), "Molly");
     BOOST_CHECK_EQUAL(user.contact().firstName(), "Molly");
     BOOST_CHECK_EQUAL(user.contact().lastName(), "Millons");

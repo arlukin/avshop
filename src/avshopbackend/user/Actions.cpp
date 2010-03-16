@@ -54,9 +54,9 @@ void Actions::clear()
     _actions.clear();
 }
 
-void Actions::load(const int& userAccountId_)
+void Actions::load(const int& userId_)
 {                           
-    rowset<row> rs = (_session.prepare << _selectQuery(userAccountId_));
+    rowset<row> rs = (_session.prepare << _selectQuery(userId_));
 
     BOOST_FOREACH(row& row, rs)
     {
@@ -76,7 +76,7 @@ void Actions::destroy(const int& actionGroupId_)
     clear();
 }
 
-std::string Actions::_selectQuery(const int& userAccountId_)
+std::string Actions::_selectQuery(const int& userId_)
 {
     std::string query =
     "SELECT "    
@@ -86,8 +86,8 @@ std::string Actions::_selectQuery(const int& userAccountId_)
     "    Action "
     "    INNER JOIN ActionGroupUser USING (actionGroupId) "
     "WHERE "
-    "    userAccountId = ";
-    query += boost::lexical_cast<std::string>(userAccountId_);
+    "    userId = ";
+    query += boost::lexical_cast<std::string>(userId_);
 
     return query;
 }

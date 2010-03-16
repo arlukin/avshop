@@ -7,7 +7,6 @@
 #include "products/Products.h"
 #include "products/ProductTypes.h"
 #include "products/OrderHeaders.h"
-#include "user/UserAccount.h"
 #include "user/User.h"
 #include "user/ActionGroup.h"
 using namespace av;
@@ -32,7 +31,7 @@ private:
     void _createDatabase()
     {
         soci::session &_session = *_shopDb.getSession();
-        _session << "delete from UserAccount";        
+        _session << "delete from User";
         _session << "delete from OrderRow";
         _session << "delete from OrderHeader";
         _session << "delete from Product";
@@ -42,12 +41,17 @@ private:
 
     void _insertUsers()
     {
-        Contact contact("Daniel", "Lindh", "Amivono AB",
-                        "Linnegatan 7", "126 51", "STOCKHOLM", "+46-73-626 54 49",
-                        "daniel@cybercow.se", "www.cybercow.se");
+        User user = *_shopDb.getUser();
+        user.setUserName("arlukin");
+        user.setPassword("password");
+        user.contact() = Contact
+        (
+            "Daniel", "Lindh", "Amivono AB",
+            "Linnegatan 7", "126 51", "STOCKHOLM", "+46-73-626 54 49",
+            "daniel@cybercow.se", "www.cybercow.se"
+        );
 
-        UserAccount userNewUser(*_shopDb.getSession(), "arlukin", "password", contact);
-        userNewUser.save();
+        user.save();
     }
 
     void _insertIntoProductTypes()

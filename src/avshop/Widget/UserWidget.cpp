@@ -4,7 +4,8 @@
 #include "Wt/WBreak"
 #include "Wt/WText"
 
-#include "user/UserAccount.h"
+#include "user/User.h"
+using namespace av;
 
 #include "ShopApplication.h"
 #include "Widget/UserWidget.h"
@@ -17,7 +18,7 @@ UserWidget::UserWidget(bool readOnly_)
 
     _table = new Wt::WTable(this);
 
-    UserAccount& user = ShopApplication::instance()->userAccount();
+    User& user = ShopApplication::instance()->user();
 
     _userName = createLineEdit("User name:", user.userName());
     _password = createLineEdit("Password:", "", PASSWORD);
@@ -46,7 +47,7 @@ void UserWidget::fetchErrorMessages(Wt::WContainerWidget * errorMessages_)
 
 void UserWidget::storeInModel()
 {
-    UserAccount& user = ShopApplication::instance()->userAccount();
+    User& user = ShopApplication::instance()->user();
 
     user.setUserName(_userName->text().toUTF8());
     user.setPassword(_password->text().toUTF8());

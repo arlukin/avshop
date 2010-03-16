@@ -5,7 +5,8 @@
 #include "general/ShopDb.h"
 #include "products/OrderHeaders.h"
 #include "products/Products.h"
-#include "user/UserAccount.h"
+#include "user/User.h"
+using namespace av;
 
 struct OrderHeaderTestSuiteFixture
 {
@@ -347,21 +348,23 @@ BOOST_AUTO_TEST_CASE( OrderHeadersFullTest)
     product2.save(*shopDb.getSession());
 
     // Setup user account
-    Contact contact
+    User user = *shopDb.getUser();
+    user.setUserName("arlukin");
+    user.setPassword("password");
+    user.contact() = Contact
     (
         "Daniel", "Lindh", "Amivono AB",
         "Linnegatan 7", "126 51", "STOCKHOLM", "+46-73-626 54 49",
         "daniel@cybercow.se", "www.cybercow.se"
     );
 
-    UserAccount userAccount(*shopDb.getSession(), "arlukin", "password", contact);
-    userAccount.save();
+    user.save();
 
     // Setup cart
     OrderHeader cart;
 
     // Set buyer
-    cart.orginator() = userAccount.contact();
+    cart.orginator() = user.contact();
 
     // Add products
     cart.addOrderRow(OrderRow(NULL, NULL, product1, 2));
@@ -379,7 +382,7 @@ BOOST_AUTO_TEST_CASE( OrderHeadersFullTest)
 
     // Clean up
     cart.destroy(*shopDb.getSession());
-    userAccount.destroy();
+    user.destroy();
     product1.destroy(*shopDb.getSession());
     product2.destroy(*shopDb.getSession());
 

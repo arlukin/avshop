@@ -9,8 +9,7 @@ add_library(avshopbackend
 	products/Product.cpp
 	products/ProductType.cpp
         products/ProductTypes.cpp
-	products/Products.cpp	
-        user/UserAccount.cpp
+	products/Products.cpp	        
         user/User.cpp
         user/Action.cpp
         user/Actions.cpp

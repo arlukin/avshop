@@ -51,7 +51,7 @@ public:
     bool isWriteable(const action_t& actionId_) const;
     bool isDeletable(const action_t& actionId_) const;
 
-    int userAccountId() const;
+    int userId() const;
 
     void setUserName(const std::string& userName_);
     std::string userName() const;
@@ -61,7 +61,7 @@ public:
     Contact& contact();
 
     void clear();
-    void load(const int& userAccountId_);
+    void load(const int& userId_);
     int  save();
     void destroy();
 
@@ -71,11 +71,11 @@ private:
     void _insert();
     void _update();
     std::string _selectBase();
-    std::string _selectQuery(const int userAccountId_);
+    std::string _selectQuery(const int userId_);
     std::string _selectQuery(const std::string userName_, const std::string password_);
 
 private:
-    int _userAccountId;
+    int _userId;
     std::string _userName;
     std::string _password;
     Contact _contact;

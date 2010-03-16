@@ -13,7 +13,6 @@
 #include <boost/foreach.hpp>
 
 #include "AVString.h"
-#include "user/UserAccount.h"
 #include "user/User.h"
 #include "user/ActionGroup.h"
 using namespace av;
@@ -122,7 +121,7 @@ void CheckOutPage::_createLoginGroup(WContainerWidget * container_)
 {
     _loginGroup = new Wt::WGroupBox(tr("check_out.your_information"), container_);
 
-    UserAccount& user = ShopApplication::instance()->userAccount();
+    User& user = ShopApplication::instance()->user();
     if (user.isLoggedIn())
     {
         _userWidget = new UserWidget();
@@ -240,8 +239,8 @@ void CheckOutPage::_rebuildCartPrices()
 
 bool CheckOutPage::isPageValid()
 {
-    _errorMessages->clear();
-    UserAccount& user = ShopApplication::instance()->userAccount();
+    _errorMessages->clear();    
+    User& user = ShopApplication::instance()->user();
     if (!user.isLoggedIn())
     {
         _errorMessages->addWidget(new Wt::WText(tr("check_out.error.need_to_login")));
@@ -269,8 +268,8 @@ void CheckOutPage::_onUpdate()
 }
 
 void CheckOutPage::_onLogin()
-{
-    UserAccount& user = ShopApplication::instance()->userAccount();
+{    
+    User& user = ShopApplication::instance()->user();
     if (user.login(_userNameEdit->text().toUTF8(), _passwordEdit->text().toUTF8()))
     {
         _loginGroup->clear();

@@ -10,7 +10,6 @@ class ProductType;
 class Contact;
 class Products;
 class OrderHeaders;
-class UserAccount;
 
 namespace av
 {
@@ -32,7 +31,6 @@ class ShopDb
         Contact* getContact();
         Products* getProducts();
         OrderHeaders* getOrderHeaders();
-        UserAccount* getUserAccount();
         User* getUser();
         ActionGroup* getActionGroup();
 

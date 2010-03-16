@@ -24,7 +24,7 @@ public:
     void addToCart(const Product *product_);
     bool saveCart();
     OrderHeader & cart();
-    UserAccount & userAccount();
+    User & user();
 
     Wt::WStackedWidget * getBody() { return _body; };
 
@@ -44,7 +44,7 @@ private:
 
 private:    
     OrderHeader _cart;
-    UserAccount * _userAccount;
+    User * _user;
     ShopDb _shopDb;    
 
     WContainerWidget *_mainNavContainer;

@@ -117,7 +117,7 @@ void ActionGroup::_selectActionGroupUser(const int& actionGroupId_)
 {
     std::string query =
     "SELECT "
-    "   userAccountId "
+    "   userId "
     "FROM "
     "   ActionGroupUser "
     "WHERE "
@@ -128,7 +128,7 @@ void ActionGroup::_selectActionGroupUser(const int& actionGroupId_)
 
     BOOST_FOREACH(row& row, rs)
     {
-        addUser(row.get<int>("userAccountId"));
+        addUser(row.get<int>("userId"));
     }
 }
 
@@ -165,13 +165,13 @@ void ActionGroup::_insert()
 
 void ActionGroup::_insertActionGroupUser()
 {    
-    BOOST_FOREACH(const int& userAccountId, _usersAcountIds)
+    BOOST_FOREACH(const int& userId, _usersAcountIds)
     {
         _session <<
         "INSERT INTO ActionGroupUser "
-        "(userAccountId, actionGroupId) "
-        "VALUES (:userAccountId, :actionGroupId)",
-        use(userAccountId, "userAccountId"),
+        "(userId, actionGroupId) "
+        "VALUES (:userId, :actionGroupId)",
+        use(userId, "userId"),
         use(actionGroupId(), "actionGroupId");
     }
 }

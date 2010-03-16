@@ -1,6 +1,4 @@
 Todo - Release 0.02
-    * Use the new login system in the shop, remove UserAccount class.
-    * Rename UserAccount table to User
     * All headings and dummy text that should be on the site.
     * Load db with valid products.    
 
@@ -41,6 +39,10 @@ Topo - Release 0.0x
     * User can see what orders he has done before.
     * Delete items in "check out" cart.
       Need to reorganize a couple of objects and classes to fix this.
+
+2010-03-16
+    * Use the new login system in the shop, remove UserAccount class.
+    * Rename UserAccount table to User
 
 2010-03-15
     * New login class with permission system.
