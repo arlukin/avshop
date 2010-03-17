@@ -65,7 +65,6 @@
 
     <message id="footer.faq">
         <h1>FAQ</h1>
-        Senast ändrad 2010-02-03<br/>
 
         <h2>Ingår moms?</h2>
         <p>Ja, moms ingår i alla priser.</p>
@@ -73,47 +72,47 @@
         <h2>Vilka betalningsvillkor gäller?</h2>
         <p>Alla beställningar med leveransaddress i Sverige har följande betalningssätt</p>
         <ul>
-        <li>Visa/Mastercard - via vår sammarbetspartner Farepayment.</li>
-        <li>
-        Faktura - Vi utför en enklare kreditkontroll via Creditsafe på alla faktura
-        betalningar, denna kommer ej synas eller sparas i något register.<br/>
-        <br/>
-        Betalningsvillkor är 10 dagar netto.<br/>
-        Obetalda fakturor debiteras med 50 kronor plus dröjsmålsränta a 5% per månad.<br/>
-        Order under 150kr faktureras ej<br/>
-        </li>
+            <li>Visa/Mastercard - via vår sammarbetspartner Farepayment.</li>
+            <li>
+            Faktura - Vi utför en enklare kreditkontroll via Creditsafe på alla faktura
+            betalningar, denna kommer ej synas eller sparas i något register.<br/>            
+            Betalningsvillkor är 10 dagar netto.<br/>
+            Obetalda fakturor debiteras med 50 kronor plus dröjsmålsränta a 5% per månad.<br/>
+            Order under 150kr faktureras ej<br/>
+            </li>
         </ul>
 
         <h2>Leverar ni utomlands?</h2>
         <p>Nej, vi levererar endast våra produkter till Svenska adresser.</p>
 
         <h2>Hur lång är leveranstiden</h2>
+        <p>
         För att kunna hålla ner priserna har vi ett begränsat lager, vilket medför
         en något längre leveranstid än många andra webshoppar. Varje produkt
-        viser en ungefärlig leveranstid.<br/>
-        <br/>
+        viser en ungefärlig leveranstid.
+        </p>
+        <p>
         De varor som vi har i lager skickas oftast inom 48 timmar, vid många
         ordrar kan det ta upp mot 7 arbetsdagar innan din order skickas.
+        </p>
 
         <h2>Vilka leveranssätt och fraktkostnader erbjuder ni?</h2>
-        Vi använder oss uteslutande av de tjänster som erbjuds genom Posten AB.<br/>
-        <br/>
-        De fraktalternativ som erbjuds och dess kostnader finner du kundvagnen.<br/>
-        <br/>
-        Vid leverans med 1:a klass brev tar Awxire AB ej ansvar för försändelsen.<br/>
-        <br/>
-        Vid överenskommelse går det även att hämta beställda varor på Linnegatan 7 i Stockholm och
+        <p>
+        Vi använder oss uteslutande av de tjänster som erbjuds genom Posten AB.
+        De fraktalternativ som erbjuds och dess kostnader finner du i kundvagnen.
+        Vid leverans med 1:a klass brev tar Awxire AB ej ansvar för försändelsen.
+        Vid överenskommelse går det även att hämta beställda varor på Linnegatan&nbsp;7 i Stockholm och
         Styrbjörnsvägen 29 i Hägersten.
+        </p>
 
         <h2>Kan jag lämna tillbaka min vara?</h2>
+        <p>***På produkter som ej har anpassats/modifierats enligt dina önskemål kan du som kund enligt
+        Distans- och hemförsäljningslagen ångra ditt köp inom 14 dagar efter det att du har tagit emot varan.</p>
+        <p>För att ångerrätten skall gälla komponenter som är känsliga för statisk elektrisitet får antistatpåsen ej vara öppnad.</p>
         <p>
-        ***På produkter som ej har anpassats/modifierats enligt dina önskemål kan du som kund enligt
-        Distans- och hemförsäljningslagen ångra ditt köp inom 14 dagar efter det att du har tagit emot varan.<br/>
-        <br/>
-        För att ångerrätten skall gälla komponenter som är känsliga för statisk elektrisitet får antistatpåsen ej vara öppnad.<br/>
-        <br/>
-        Ångerrätt och öppet köp gäller ej företag.<br/>
-        <br/>
+        Ångerrätt och öppet köp gäller ej företag.
+        </p>
+        <p>
         Vid en eventuell retur får du full ersättning för dina utlägg, inklusive kostnaden för returfrakten.
         Innan en eventuell retur, kontakta info@m.nu
         </p>
@@ -142,24 +141,25 @@
 
         <h2>Reservation</h2>
         <p>***Vi reserverar oss mot felaktigheter i prislista och innehåll på webbsidan.</p>
+
+        <br/>
+        <p>Senast ändrad 2010-02-03.</p>
+
     </message>
 
     <message id="footer.contact_us">
-        <h1>Kontakta oss</h1>
-        <h2>Adress</h2>
+        <h1>Kontakta oss</h1>        
         <p>
         Awxire AB<br/>
         Styrbjörnsvägen 29<br/>
         126 51 HÄGERSTEN<br/>
         SVERIGE<br/>
-        </p>
-        <h2>Epost</h2>
-        <p>amivono@cybercow.se</p>
-        <h2>Telefon</h2>
-        <p>
-        073-626 54 49 Vi befinner oss inte alltid på kontoret villket
+        <br/>
+        Epost: amivono@cybercow.se<br/>
+        Telefon: 073-626 54 49 <br/>
+        Vi befinner oss inte alltid på kontoret villket
         medför att vi inte alltid har möjlighet att svara i telefon. Enklast
-        når du oss vi Epost, om du önskar prata med oss kan vi ringa ringa tillbaka.
+        når du oss vi Epost. Ange i epostet om du önskar att vi ringer upp dig.
         </p>
     </message>
 

@@ -1,4 +1,6 @@
 Todo - Release 0.02
+    * Good looking site with javascript support.
+    * Good looking site without javascript support.
     * All headings and dummy text that should be on the site.
     * Load db with valid products.    
     * Use the new login system in the shop.
@@ -13,8 +15,7 @@ Todo - Release 0.03
     * Browser Back/forward functionality in product views.
     * Bread crumbs on all pages.
 
-Todo - Release 0.04 (Better development tools)
-    * Add to subversion or git or launchpad...
+Todo - Release 0.04 (Better development tools)    
     * Setup doxygen
     * Setup database model documents.
     * Setup uml class diagrams.
@@ -45,10 +46,12 @@ Topo - Release 0.0x
     * Removed all dependent javascripts (/avshop/approot/var/www/resources/js)
     * Using witty for the "changing" product image.
     * Sorting producttypes on name.
+    * When the webapp is starting, all existing servers and stubs are killed.
 
 2010-03-16
     * Use the new login system in the shop, remove UserAccount class.
     * Rename UserAccount table to User
+    * Added the avshop project to github.
 
 2010-03-15
     * New login class with permission system.

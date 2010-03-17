@@ -1,4 +1,5 @@
 #include <boost/foreach.hpp>
+#include <boost/algorithm/string/case_conv.hpp>
 
 #include <Wt/WEnvironment>
 #include <Wt/WStackedWidget>
@@ -188,17 +189,27 @@ void ShopApplication::_createCartBox(WContainerWidget *container_)
     _rebuildCart();
 }
 
+WString upperTr(const std::string& string_)
+{
+    std::string str = WString::tr(string_).toUTF8();
+    std::string upperStr = boost::to_upper_copy(str);
+
+    return WString(upperStr, UTF8);
+}
+
 void ShopApplication::_createMenu()
 {    
     // Main Menu
     _mainMenu = new Wt::WMenu(_body, Wt::Horizontal, _mainNavContainer);    
-    _mainMenu->setStyleClass("menu");
-    _mainMenu->setInternalPathEnabled();
+    _mainMenu->setRenderAsList(true);
+    _mainMenu->setStyleClass("menu main_menu");
+    _mainMenu->setInternalPathEnabled();    
 
-    _mainMenu->addItem(WString::tr("products"), new ProductListWidget());
-    _mainMenu->addItem(WString::tr("faq"), new ArticleWidget("footer.faq"));
-    _mainMenu->addItem(WString::tr("contact_us"), new ArticleWidget("footer.contact_us"));
-    _mainMenu->addItem(WString::tr("about_us"), new ArticleWidget("footer.about_us"));
+    // Will be sorted backwards.
+    _mainMenu->addItem(upperTr("about_us"), new ArticleWidget("footer.about_us"));
+    _mainMenu->addItem(upperTr("contact_us"), new ArticleWidget("footer.contact_us"));
+    _mainMenu->addItem(upperTr("faq"), new ArticleWidget("footer.faq"));
+    _mainMenu->addItem(upperTr("products"), new ProductListWidget());
 
     // Breadcrumb menu
     //Wt::WMenu *breadCrumbMenu = new Wt::WMenu(_body, Wt::Horizontal, _breadCrumbsContainer);

@@ -26,8 +26,9 @@ table, caption, tbody, tfoot, thead, tr, th, td
 body, td, legend, label
 {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    color: #CCCCCC;    
+    font-size: 12px;
+    color: #CCCCCC;
+    line-height: 16.8px;
 }
 
 body
@@ -46,14 +47,48 @@ input, select, button, radio, textarea
 hr 
 {
     border: 0;
-    color: #666666;
-    background-color: #666677;
+    color: #656565;
+    background-color: #656565;
     height: 1px;
+}
+
+h1
+{
+    font-size: 20px;    
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2
+{
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+p
+{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+ul
+{
+    margin-left: 15px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 /************/
 /*** Menu ***/
 /************/
+.menu
+{
+    font-size: 10px;
+}
 a, a:link, a:visited, a.active, a.active:hover
 {
         color: #92c7fc;
@@ -63,12 +98,40 @@ a, a:link, a:visited, a.active, a.active:hover
 .menu a
 {
         text-align:center;
-        color:#fdc6cc;
+        #color:#fdc6cc;
+        color:#FEFEFE;
 }
 
 a:hover
 {
     color:#FFFFFF;
+}
+
+.main_menu
+{
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    #font-family: Verdana, Arial, Helvetica, sans-serif;
+    #font-size: 10px;
+    float:right;    
+
+    text-align:right;
+    text-transform:uppercase;
+    width:700px;
+
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.main_menu li
+{
+    #font-family: Verdana, Arial, Helvetica, sans-serif;
+    #font-size: 10px;
+    float:right;
+    line-height:1.2em;
+    margin-left:12px;
 }
 
 /**************/
@@ -145,7 +208,7 @@ a:hover
 {    
     clear:right;
     float:right;
-    margin-right: 10px;
+    margin-right: 10px;  
 }
 
 .bread_crumbs
@@ -197,7 +260,13 @@ a:hover
     background: none;
     #background-color: #111111;
     #background-color:#2e282b;
-    background-color: #191919;
+
+    background-color:#252121;
+
+    # BAng
+    #background-color:#333333;
+
+    #background-color: #191919;
     #color:#999999;
 }
 
@@ -262,32 +331,44 @@ a:hover
 /*************/
 
 .article
-{    
+{        
     padding: 25px 25px 25px 25px;
-    color: #ffc5cb;
-    font-size:12px;
-    line-height: 17px;
+    #color: #cccccc
+    #font-size:12px;
+    #line-height: 16.8px;
 }
 
-.article h1
-{
-    color:#FFC5CB;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.article h2
-{
-    margin-bottom: 15px;
-    font-size: 14px;
-    color: #ffc5cb;
-    font-weight: normal;
-}
-
-.article p
-{
-    margin-bottom: 15px;
-}
+#.article1 h1
+#{
+#    font-size: 20px;
+#    #color: #cccccc;
+#    color: #FFFFFF;
+#    font-weight: bold;
+#    margin-bottom: 20px;
+#}
+#
+#.article1 h2
+#{
+#    font-size: 14px;
+#    #color: #cccccc;
+#    color: #FFFFFF;
+#   font-weight: bold;
+#    margin-top: 24px;
+#    margin-bottom: 12px;
+#}
+#
+#.article1 p
+#{
+#    margin-top: 12px;
+#    margin-bottom: 12px;
+#}
+#
+#.article1 ul
+#{
+#    margin-left: 15px;
+#    margin-top: 12px;
+#    margin-bottom: 12px;
+#}
 
 /*************************/
 /*** ProductListWidget ***/
@@ -444,7 +525,7 @@ fieldset
 
     background-color:#191919;
     padding:5px 10px 5px 10px;
-    border:1px solid #666677;
+    border:1px solid #656565;
 
     background-image:url(/resources/images/spec_table_top.gif);
     background-repeat:repeat-x;
@@ -474,8 +555,8 @@ legend
 .product h2
 {
     font-weight:bold;
-    font-size:16px;    
-    line-height: 34px;
+    font-size:16px;
+    margin-top:6px;
 }
 
 .product button
