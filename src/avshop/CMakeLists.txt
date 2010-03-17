@@ -8,8 +8,7 @@ add_executable(avshop
 	ForgotPasswordPanel.cpp
 	Main.cpp
 	NewAccountPanel.cpp
-	ProductListThumbViewWidget.cpp
-	ProductListWidget.cpp
+	ProductListThumbViewWidget.cpp	
 	ProductMenuItem.cpp
 	ProductWidget.cpp
 	ShopApplication.cpp	

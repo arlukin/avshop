@@ -12,13 +12,14 @@
 #include "Wt/WLogger"
 using namespace Wt;
 
+#include "products/ProductTypes.h"
 #include "products/Product.h"
 #include "user/User.h"
 #include "user/ActionGroup.h"
 using namespace av;
 
 #include "ShopApplication.h"
-#include "ProductListWidget.h"
+#include "ProductListThumbViewWidget.h"
 #include "ArticleWidget.h"
 #include "Widget/UserWidget.h"
 #include "ForgotPasswordPanel.h"
@@ -89,6 +90,7 @@ void ShopApplication::_createPage()
     _createFooter(root());
 
     _createMenu();
+    _createSidePanel();
 }
 
 void ShopApplication::_createHeader(WContainerWidget *pageContainer_)
@@ -133,7 +135,11 @@ void ShopApplication::_createBody(WContainerWidget *pageContainer_)
 
     bodyContainer5 = new WContainerWidget(bodyContainer4);
 
+    _sidePanel = new WContainerWidget(bodyContainer5);
+    _sidePanel->setStyleClass("side_panel");
+
     _body = new Wt::WStackedWidget(bodyContainer5);
+    _body->setStyleClass("product_area");
 }
 
 void ShopApplication::_createFooter(WContainerWidget *pageContainer_)
@@ -208,8 +214,7 @@ void ShopApplication::_createMenu()
     // Will be sorted backwards.
     _mainMenu->addItem(upperTr("about_us"), new ArticleWidget("footer.about_us"));
     _mainMenu->addItem(upperTr("contact_us"), new ArticleWidget("footer.contact_us"));
-    _mainMenu->addItem(upperTr("faq"), new ArticleWidget("footer.faq"));
-    _mainMenu->addItem(upperTr("products"), new ProductListWidget());
+    _mainMenu->addItem(upperTr("faq"), new ArticleWidget("footer.faq"));    
 
     // Breadcrumb menu
     //Wt::WMenu *breadCrumbMenu = new Wt::WMenu(_body, Wt::Horizontal, _breadCrumbsContainer);
@@ -227,6 +232,35 @@ void ShopApplication::_createMenu()
     //footerMenu->addItem("Artiklar", new ArticleWidget("mainnav.Artiklar"));
     //footerMenu->addItem(WString::tr("label.sitemap"), new ArticleWidget("footer.sitemap"));
     //footerMenu->setInternalPathEnabled();
+}
+
+void ShopApplication::_createSidePanel()
+{
+    new WText("<h1>Products</h1>", _sidePanel );
+    new WText("<hr />", _sidePanel );
+    WMenu *menu = new WMenu(_body, Wt::Vertical, _sidePanel );
+    menu->setStyleClass("side_nav menu");
+    //menu->setInternalPathEnabled();
+    //menu->setInternalBasePath("/label_products");
+
+    // Add menu items.
+    ShopDb * db = ShopApplication::instance()->db();
+    ProductTypes& productTypes = *(db->getProductTypes());
+
+    productTypes.addFilter(ProductTypes::HAS_PRODUCTS);
+    productTypes.load();
+    for
+    (
+        ProductTypes::const_iterator productType = productTypes.begin();
+        productType != productTypes.end();
+        ++productType
+    )
+    {
+        menu->addItem(WString(productType->name(), UTF8), new ProductListThumbViewWidget(productType->productTypeId(), _body));
+    }
+    menu->select(0);
+
+    new WText("<hr />", _sidePanel );
 }
 
 void ShopApplication::_rebuildCart()

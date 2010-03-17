@@ -40,6 +40,7 @@ private:
     void _createCartBox(WContainerWidget *container_);
 
     void _createMenu();    
+    void _createSidePanel();
     void _rebuildCart();
 
 private:    
@@ -54,6 +55,7 @@ private:
     Wt::WGroupBox *_memberBox;
 
     WContainerWidget * bodyContainer5;
+    WContainerWidget *_sidePanel;
     Wt::WStackedWidget *_body;
 
     WContainerWidget *_footerRightContainer;    

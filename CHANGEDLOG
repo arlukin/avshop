@@ -1,4 +1,4 @@
-Todo - Release 0.02
+Todo - Release 0.02    
     * Good looking site with javascript support.
     * Good looking site without javascript support.
     * All headings and dummy text that should be on the site.
@@ -43,10 +43,12 @@ Topo - Release 0.0x
       Need to reorganize a couple of objects and classes to fix this.
 
 2010-03-17
+    * Product type side panel on all pages.
     * Removed all dependent javascripts (/avshop/approot/var/www/resources/js)
     * Using witty for the "changing" product image.
     * Sorting producttypes on name.
     * When the webapp is starting, all existing servers and stubs are killed.
+    * Better looking site with javascript support.
 
 2010-03-16
     * Use the new login system in the shop, remove UserAccount class.
