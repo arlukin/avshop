@@ -87,7 +87,7 @@ std::string ProductTypes::selectQuery()
 
     query +=
         "ORDER BY "
-        "   ProductType.productTypeId";
+        "   ProductType.name";
 
     return query;
 }

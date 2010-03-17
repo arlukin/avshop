@@ -18,13 +18,16 @@ WWidget *ProductMenuItem::createItemWidget()
     //<div class="collection" style="background: url(productimages/QEES_Dimmer_billed_tekst_01_thumb.jpg) no-repeat;">
     WContainerWidget *result = new WContainerWidget();
     WContainerWidget *collection = new WContainerWidget(result);
+    collection->mouseWentOver().connect(SLOT(this, ProductMenuItem::_mouseWentOver));
+    collection->mouseWentOut().connect(SLOT(this, ProductMenuItem::_mouseWentOut));
+
     collection->setStyleClass("collection");
     collection->decorationStyle().setBackgroundImage(text().toUTF8());
 
-    WContainerWidget *faderInvisible = new WContainerWidget(collection);
-    faderInvisible->setStyleClass("fader invisible");
+    _faderInvisible = new WContainerWidget(collection);
+    _faderInvisible->setStyleClass("fader invisible");
 
-    WContainerWidget *faderInvisible2 = new WContainerWidget(faderInvisible);
+    WContainerWidget *faderInvisible2 = new WContainerWidget(_faderInvisible);
     Wt:WString description(
         "<span class=\"heading\">QEES Dimmer</span>"
         "<span class=\"price\">65 EUR</span>"
@@ -66,4 +69,14 @@ void ProductMenuItem::updateItemWidget(WWidget *itemWidget)
     a->setRef(url);
     a->clicked().setPreventDefault(true);
   }*/
+}
+
+void ProductMenuItem::_mouseWentOver()
+{
+    _faderInvisible->setStyleClass("fader");
+}
+
+void ProductMenuItem::_mouseWentOut()
+{
+    _faderInvisible->setStyleClass("fader invisible");
 }

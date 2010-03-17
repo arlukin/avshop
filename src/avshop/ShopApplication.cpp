@@ -81,13 +81,6 @@ void ShopApplication::_createPage()
 {
     setTitle("Amivono shop");
     useStyleSheet("/resources/css/style.css");    
-    require("/resources/js/jquery/jquery-1.2.3.pack.js");
-    require("/resources/js/jquery/jquery.noconflict.js");
-    require("/resources/js/jquery/jquery.innerfade.js");
-    require("/resources/js/prototype/prototype.js");
-    require("/resources/js/frontend.js");
-    //std::cout << environment().locale();
-    //setLocale("UTF-8");
     messageResourceBundle().use("etc/avshop", false);
 
     _createHeader(root());

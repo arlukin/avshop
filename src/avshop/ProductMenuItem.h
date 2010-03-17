@@ -13,10 +13,16 @@ public:
     ProductMenuItem(const Product *product_);
 
     void updateItemWidget(WWidget *itemWidget);
-    WWidget *createItemWidget();
+    WWidget* createItemWidget();
 
 private:
-    const Product * _product;
+    const Product* _product;
+
+    WContainerWidget* _faderInvisible;
+
+private:
+    void _mouseWentOver();
+    void _mouseWentOut();
 };
 
 #endif // PRODUCTMENUITEM_H

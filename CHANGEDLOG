@@ -1,6 +1,7 @@
 Todo - Release 0.02
     * All headings and dummy text that should be on the site.
     * Load db with valid products.    
+    * Use the new login system in the shop.
 
 Todo - Release 0.03
     * Send confirmation email when order is completed.
@@ -39,6 +40,11 @@ Topo - Release 0.0x
     * User can see what orders he has done before.
     * Delete items in "check out" cart.
       Need to reorganize a couple of objects and classes to fix this.
+
+2010-03-17
+    * Removed all dependent javascripts (/avshop/approot/var/www/resources/js)
+    * Using witty for the "changing" product image.
+    * Sorting producttypes on name.
 
 2010-03-16
     * Use the new login system in the shop, remove UserAccount class.
