@@ -15,28 +15,43 @@ using namespace std;
 void killExistingPid()
 {
     int pid;
-    ifstream myfile ("/tmp/avshop.pid");
+    ifstream myfile ("/tmp/avshopstub.pid");
     if (myfile.is_open())
     {
       while (! myfile.eof() )
       {        
-        myfile >> pid;
-        cout << "kill " << pid << endl;
+        myfile >> pid;        
+        if (pid)
+        {
+            cout << "kill " << pid << endl;
 
-        kill(pid, SIGTERM);
-        remove("/tmp/avshop.pid");
-        sleep(1);
+            kill(pid, SIGTERM);
+            pid = 0;
+        }
       }
+      remove("/tmp/avshop.pid");
+      sleep(1);
       myfile.close();
     }
 }
 
 void storePid()
 {
-    ofstream myfile;
-    myfile.open ("/tmp/avshop.pid");
-    myfile << getpid();
-    myfile.close();
+    ofstream myfile("/tmp/avshopstub.pid");
+    if ( ! myfile )
+    {
+      cout << "Coudln't open pid file!" << endl;
+    }
+    else
+    {
+        std::cout << "Pid: " << getpid() << std::endl;
+        std::cout << "Ppid: " << getppid() << std::endl;
+
+        myfile << getpid() << std::endl;
+        myfile << getppid() << std::endl;
+
+        myfile.close();
+    }
 }
 
 void killExistingWebServer()
@@ -44,11 +59,7 @@ void killExistingWebServer()
     try
     {
         killExistingPid();
-
         storePid();
-
-        std::cout << "Pid: " << getpid() << std::endl;
-        std::cout << "Ppid: " << getppid() << std::endl;
     }
     catch(...)
     {
