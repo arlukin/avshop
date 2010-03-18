@@ -12,14 +12,17 @@
 #include "Wt/WLogger"
 using namespace Wt;
 
+#include "general/ShopDb.h"
+#include "products/Products.h"
 #include "products/ProductTypes.h"
 #include "products/Product.h"
 #include "user/User.h"
 #include "user/ActionGroup.h"
 using namespace av;
 
+#include "ProductWidget.h"
+#include "ProductMenuItem.h"
 #include "ShopApplication.h"
-#include "ProductListThumbViewWidget.h"
 #include "ArticleWidget.h"
 #include "Widget/UserWidget.h"
 #include "ForgotPasswordPanel.h"
@@ -135,8 +138,8 @@ void ShopApplication::_createBody(WContainerWidget *pageContainer_)
 
     bodyContainer5 = new WContainerWidget(bodyContainer4);
 
-    _sidePanel = new WContainerWidget(bodyContainer5);
-    _sidePanel->setStyleClass("side_panel");
+    _sidePanel = new Wt::WGroupBox("", bodyContainer5);
+    _sidePanel->setStyleClass("side_panel_box");
 
     _body = new Wt::WStackedWidget(bodyContainer5);
     _body->setStyleClass("product_area");
@@ -209,7 +212,8 @@ void ShopApplication::_createMenu()
     _mainMenu = new Wt::WMenu(_body, Wt::Horizontal, _mainNavContainer);    
     _mainMenu->setRenderAsList(true);
     _mainMenu->setStyleClass("menu main_menu");
-    _mainMenu->setInternalPathEnabled();    
+    _mainMenu->setInternalPathEnabled();
+    _mainMenu->setInternalBasePath("/");
 
     // Will be sorted backwards.
     _mainMenu->addItem(upperTr("about_us"), new ArticleWidget("footer.about_us"));
@@ -236,31 +240,46 @@ void ShopApplication::_createMenu()
 
 void ShopApplication::_createSidePanel()
 {
-    new WText("<h1>Products</h1>", _sidePanel );
-    new WText("<hr />", _sidePanel );
-    WMenu *menu = new WMenu(_body, Wt::Vertical, _sidePanel );
-    menu->setStyleClass("side_nav menu");
-    //menu->setInternalPathEnabled();
-    //menu->setInternalBasePath("/label_products");
+    _sidePanel->setTitle(WString::tr("products"));
+    //new WText("<h1>Products</h1>", _sidePanel );
+    //new WText("<hr />", _sidePanel );
 
-    // Add menu items.
-    ShopDb * db = ShopApplication::instance()->db();
-    ProductTypes& productTypes = *(db->getProductTypes());
+    WMenu *menu = new WMenu(_body, Wt::Vertical, _sidePanel );
+    menu->setRenderAsList(true);
+    menu->setStyleClass("menu");
+    menu->setInternalPathEnabled();
+    menu->setInternalBasePath("/products/");
+
+    // Add menu items.    
+    ProductTypes& productTypes = *_shopDb.getProductTypes();
 
     productTypes.addFilter(ProductTypes::HAS_PRODUCTS);
     productTypes.load();
-    for
-    (
-        ProductTypes::const_iterator productType = productTypes.begin();
-        productType != productTypes.end();
-        ++productType
-    )
+    BOOST_FOREACH(ProductType& productType, productTypes)
     {
-        menu->addItem(WString(productType->name(), UTF8), new ProductListThumbViewWidget(productType->productTypeId(), _body));
+        menu->addItem(WString(productType.name(), UTF8), _createProductListThumbViewWidget(productType.productTypeId()));
     }
-    menu->select(0);
+    //menu->select(0);
 
-    new WText("<hr />", _sidePanel );
+    //new WText("<br/><hr /><br/>", _sidePanel );
+}
+
+WContainerWidget* ShopApplication::_createProductListThumbViewWidget(int productTypeId_)
+{
+    WContainerWidget* productListContainer = new WContainerWidget();
+
+    WMenu *menu = new WMenu(_body, Wt::Horizontal, productListContainer);
+    menu->setInternalPathEnabled();
+    menu->setInternalBasePath("/products/");
+
+    Products& products = *_shopDb.getProducts();
+    products.load(productTypeId_);
+    BOOST_FOREACH(Product& product, products)
+    {
+        menu->addItem(new ProductMenuItem(&product));
+    }
+
+    return productListContainer;
 }
 
 void ShopApplication::_rebuildCart()

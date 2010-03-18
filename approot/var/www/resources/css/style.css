@@ -82,6 +82,34 @@ ul
     margin-bottom: 12px;
 }
 
+fieldset
+{
+    margin: 5px;
+    padding: 2;
+
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+
+    background-color:#191919;
+    padding:5px 10px 5px 10px;
+    border:1px solid #656565;
+
+    background-image:url(/resources/images/spec_table_top.gif);
+    background-repeat:repeat-x;
+    width: 280px;
+    float:right;
+}
+
+legend
+{
+    font-weight:bold;
+    font-size:10px;
+}
+
 /************/
 /*** Menu ***/
 /************/
@@ -110,8 +138,6 @@ a:hover
 .main_menu
 {
     font-family: Arial, Verdana, Helvetica, sans-serif;
-    #font-family: Verdana, Arial, Helvetica, sans-serif;
-    #font-size: 10px;
     float:right;    
 
     text-align:right;
@@ -139,8 +165,10 @@ a:hover
 /**************/
 .Wt-panel
 {
-    margin: 5px auto 5px 5px;
-    border: 1px solid #666677;
+    #margin: 0px auto 5px 5px;
+    margin: 0px;
+    padding:5px 10px 5px 10px;
+    border:1px solid #656565;
     overflow:hidden;
     
     background-color:#191919;
@@ -307,8 +335,13 @@ a:hover
 .cart_box
 {
     margin-top: 4px;
-    width: 250px;
+    width: 370px;
     float: right;
+}
+
+.cart_box select
+{
+    width:250px;
 }
 
 .cart_image span
@@ -326,75 +359,50 @@ a:hover
     font-weight:bold;
 }
 
-/*************/
-/** Article **/
-/*************/
+/**********************/
+/*** Side Panel Box ***/
+/**********************/
 
-.article
-{        
-    padding: 25px 25px 25px 25px;
-    #color: #cccccc
-    #font-size:12px;
-    #line-height: 16.8px;
-}
-
-#.article1 h1
-#{
-#    font-size: 20px;
-#    #color: #cccccc;
-#    color: #FFFFFF;
-#    font-weight: bold;
-#    margin-bottom: 20px;
-#}
-#
-#.article1 h2
-#{
-#    font-size: 14px;
-#    #color: #cccccc;
-#    color: #FFFFFF;
-#   font-weight: bold;
-#    margin-top: 24px;
-#    margin-bottom: 12px;
-#}
-#
-#.article1 p
-#{
-#    margin-top: 12px;
-#    margin-bottom: 12px;
-#}
-#
-#.article1 ul
-#{
-#    margin-left: 15px;
-#    margin-top: 12px;
-#    margin-bottom: 12px;
-#}
-
-/*************************/
-/*** ProductListWidget ***/
-/*************************/
-
-.side_panel
+.side_panel_box
 {
     float:left;
-    width: 134px;
-    padding: 0px 0px 0px 10px;
+    margin-top: 3x;
+    margin-left:10px;
+    width: 140px;
+    padding: 5px;    
 }
 
-.side_panel h1
+.side_panel_box legend
 {
-    text-align:center;
-    padding: 6px 0px 2px 0px;
-    font-size: 140%;
+    margin-left: 40px;
 }
 
-.side_nav a
+.side_panel_box ul
+{
+    margin:0px;
+    padding: 0px;
+
+    font-family: Arial, Verdana, Helvetica, sans-serif;    
+    font-size: 12px;
+
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.side_panel_box a
 {
     text-align:center;
     display:block;
-    width: 128px;
-}
- 
+    width: 140px;
+} 
+
+/********************/
+/*** product_area ***/
+/********************/
 .product_area
 {
     margin-left:160px;
@@ -410,153 +418,140 @@ a:hover
 
 div.collection
 {
-        float: left;
-        width: 204px;
-        height: 204px;
-        overflow:hidden;
-        position:relative;        
+    float: left;
+    width: 204px;
+    height: 204px;
+    overflow:hidden;
+    position:relative;
 }
 
 div.fader
 {
-        width: 204px;
-        height: 204px;
-        background:url(/resources/images/fader.png) no-repeat;
-        position:absolute;
-        left: 0;
-        top: 0;
-        z-index: 100;
-        zoom:1;        
+    width: 204px;
+    height: 204px;
+    background:url(/resources/images/fader.png) no-repeat;
+    position:absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    zoom:1;
 }
 
-div.collection div.sale_label{
-        width: 85px;
-        height: 84px;
-        position:absolute;
-        right: 0;
-        bottom: 0;
-        z-index: 11;
-        background:url(/resources/images/sale_label.png) no-repeat;
-}
-
-div.collection div.offer_label{
-        width: 85px;
-        height: 84px;
-        position:absolute;
-        right: 0;
-        bottom: 0;
-        z-index: 11;
-        background:url(/resources/images/offer_label.png) no-repeat;
-}
-
-div.collection span.heading{
-        display:block;
-        width: 204px;
-        text-align:center;
-        color: #ffc5cb;
-        font-size: 20px;
-        line-height: 32px;
-        float:left;
-        cursor:pointer;
-        font-weight: normal;
-}
-
-div.collection span.desc{
-        display:block;
-        width: 154px;
-        margin: 0 auto;
-        text-align:center;
-        color: #fff;
-        font-size: 12px;
-        line-height: 13px;
-        cursor:pointer;
-        padding-top: 7px;
-        margin-bottom: 5px;
-        clear:both;
-}
-
-div.collection span.price{
-        display:block;
-        width: 204px;
-        text-align:center;
-        clear: both;
-        color: #fff;
-        font-size: 16px;
-        margin-top: 5px;
-        float:left;
-        cursor:pointer;
-}
-
-div.collection span.price_sale{
-        display:block; width:204px; text-align:center; clear: both; color: #ffc5cb; font-size: 16px; margin-top: 5px; float:left;
-        cursor:pointer;
-}
-
-div.collection span.price_sale span{
-        background: url(/resources/images/pink_dot.gif) repeat-x center left;
-        padding: 0 3px;
-        margin:0 auto 0 auto;
-}
-
-#price{
-        float: right;
-        background-color:#191919;
-        width:74px;
-        padding: 2px 0px 2px 0px;
-        border:1px solid #666666;
-        color:#92C7FC;
-        font-weight:bold;
-        text-align: center;
-}
-
-/**** ProductWidget **********/
-
-fieldset
+div.collection div.sale_label
 {
-    margin: 5px;
-    padding: 5;
+    width: 85px;
+    height: 84px;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    background:url(/resources/images/sale_label.png) no-repeat;
+}
 
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    font-family: inherit;
-    vertical-align: baseline;
+div.collection div.offer_label
+{
+    width: 85px;
+    height: 84px;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    background:url(/resources/images/offer_label.png) no-repeat;
+}
 
+div.collection span.heading
+{
+    display:block;
+    width: 204px;
+    text-align:center;
+    color: #ffc5cb;
+    font-size: 20px;
+    line-height: 32px;
+    float:left;
+    cursor:pointer;
+    font-weight: normal;
+}
+
+div.collection span.desc
+{
+    display:block;
+    width: 154px;
+    margin: 0 auto;
+    text-align:center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 13px;
+    cursor:pointer;
+    padding-top: 7px;
+    margin-bottom: 5px;
+    clear:both;
+}
+
+div.collection span.price
+{
+    display:block;
+    width: 204px;
+    text-align:center;
+    clear: both;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 5px;
+    float:left;
+    cursor:pointer;
+}
+
+div.collection span.price_sale
+{
+    display:block; width:204px; text-align:center; clear: both; color: #ffc5cb; font-size: 16px; margin-top: 5px; float:left;
+    cursor:pointer;
+}
+
+div.collection span.price_sale span
+{
+    background: url(/resources/images/pink_dot.gif) repeat-x center left;
+    padding: 0 3px;
+    margin:0 auto 0 auto;
+}
+
+#price
+{
+    float: right;
     background-color:#191919;
-    padding:5px 10px 5px 10px;
-    border:1px solid #656565;
-
-    background-image:url(/resources/images/spec_table_top.gif);
-    background-repeat:repeat-x;
-    width: 280px;
-    float:right;
-}
-legend
-{
+    width:74px;
+    padding: 2px 0px 2px 0px;
+    border:1px solid #666666;
+    color:#92C7FC;
     font-weight:bold;
-    font-size:10px;
+    text-align: center;
 }
-.product td
+
+/*********************/
+/** Article/Product **/
+/*********************/
+.article, .product
+{
+    padding: 10px 25px 25px 10px;
+    display:block;
+}
+
+/*************/
+/** Product **/
+/*************/
+.product_text
+{    
+    margin-left: 6px;
+    display:block;
+}
+
+.product fieldset td
 {
     padding: 1px 3px 1px 3px;
 }
-.product
-{
-
-}
 
 .product img
-{
-    margin: 10px;
-    width: 280px;
-}
-
-.product h2
-{
-    font-weight:bold;
-    font-size:16px;
-    margin-top:6px;
+{    
+    margin-bottom: 10px;
+    width: 270px;
 }
 
 .product button
@@ -568,26 +563,20 @@ legend
 {
     color:#92C7FC;
     font-size:16px;
-    font-weight:bold;    
-
-}
-.product .article
-{
-    display:block;
-}
-.product br
-{
-    clear:both;        
+    font-weight:bold;
 }
 
-/************/
+/*********************/
 /** Check out panel **/
-/************/
+/*********************/
 .check_out_panel
 {
-    width: auto;
-    margin: 5px;
-    padding: 5px;
+    float:right;
+    margin-top:13px;
+    margin-right:10px;
+    margin-bottom:10px;
+    padding:9px;
+    width:580px;
 }
 
 .check_out_panel fieldset

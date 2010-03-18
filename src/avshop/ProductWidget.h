@@ -14,9 +14,7 @@ public:
 public:
     void onBuyButton();
 
-private:
-    WText * _body ;
-
+private:    
     const Product * _product;
 };
 

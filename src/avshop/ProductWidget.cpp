@@ -15,7 +15,7 @@ ProductWidget::ProductWidget(const Product * const product_)
     _product = product_;
     setStyleClass("product");
 
-    new WText("<h2>" + _product->name() + "</h2>", this);
+    new WText("<h1>" + _product->name() + "</h1>", this);
 
     Wt::WImage *img = new Wt::WImage(_product->imageName("var/www/", "resources/images/productimages/"), this);
     img->setAlternateText(_product->name());
@@ -48,8 +48,8 @@ ProductWidget::ProductWidget(const Product * const product_)
     // Info
     new WBreak(this);
     const std::string desc = _product->description();    
-    _body = new WText(WString(desc, UTF8), this);
-    _body->setStyleClass("article");
+    WText * body = new WText(WString(desc, UTF8), this);
+    body->setStyleClass("product_text");
 }
 
 void ProductWidget::onBuyButton()

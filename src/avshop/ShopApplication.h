@@ -41,6 +41,7 @@ private:
 
     void _createMenu();    
     void _createSidePanel();
+    WContainerWidget* _createProductListThumbViewWidget(int productTypeId_);
     void _rebuildCart();
 
 private:    
@@ -54,8 +55,8 @@ private:
 
     Wt::WGroupBox *_memberBox;
 
-    WContainerWidget * bodyContainer5;
-    WContainerWidget *_sidePanel;
+    WContainerWidget * bodyContainer5;    
+    Wt::WGroupBox *_sidePanel;
     Wt::WStackedWidget *_body;
 
     WContainerWidget *_footerRightContainer;    

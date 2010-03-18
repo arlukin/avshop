@@ -8,13 +8,14 @@
 #include "ProductMenuItem.h"
 
 ProductMenuItem::ProductMenuItem(const Product *product_)
-    : WMenuItem::WMenuItem(product_->imageThumbName("var/www/", "resources/images/productimages/"), new ProductWidget(product_))
+    : WMenuItem::WMenuItem(product_->imageThumbName("var/www/", "resources/images/productimages/"), new ProductWidget(product_), PreLoading)
 {
     _product = product_;
+    setPathComponent(_product->name());
 }
 
 WWidget *ProductMenuItem::createItemWidget()
-{    
+{        
     //<div class="collection" style="background: url(productimages/QEES_Dimmer_billed_tekst_01_thumb.jpg) no-repeat;">
     WContainerWidget *result = new WContainerWidget();
     WContainerWidget *collection = new WContainerWidget(result);
