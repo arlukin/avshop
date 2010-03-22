@@ -1,5 +1,5 @@
-#include <boost/algorithm/string/replace.hpp>
 #include <boost/algorithm/string/case_conv.hpp>
+#include <boost/regex.hpp>
 
 #include "Product.h"
 
@@ -288,13 +288,9 @@ void Product::destroy(session& session_)
 std::string Product::_sanitizeFileName(const std::string& str_) const
 {
     std::string str = boost::to_lower_copy(str_);
-    boost::replace_all(str, " ", "_");
-    boost::replace_all(str, "(", "_");
-    boost::replace_all(str, ")", "_");
-    boost::replace_all(str, "-", "_");
-    boost::replace_all(str, "\"", "_");
-    boost::replace_all(str, ",", "_");
-    boost::replace_all(str, "/", "_");
+
+    const boost::regex e("[^0-9a-zA-Z]");
+    str = boost::regex_replace(str, e, "_");
 
     return str;
 }

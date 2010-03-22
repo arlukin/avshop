@@ -57,7 +57,8 @@ private:
 
     WContainerWidget * bodyContainer5;    
     Wt::WGroupBox *_sidePanel;
-    Wt::WStackedWidget *_body;
+    Wt::WStackedWidget *_body;    
+    WContainerWidget * _bodyInStack;
 
     WContainerWidget *_footerRightContainer;    
 

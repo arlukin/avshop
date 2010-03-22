@@ -4,6 +4,9 @@
 #include "Wt/WCssDecorationStyle"
 #include "Wt/WMenu"
 
+#include "boost/lexical_cast.hpp"
+#include "boost/regex.hpp"
+
 #include "ProductWidget.h"
 #include "ProductMenuItem.h"
 
@@ -11,7 +14,11 @@ ProductMenuItem::ProductMenuItem(const Product *product_)
     : WMenuItem::WMenuItem(product_->imageThumbName("var/www/", "resources/images/productimages/"), new ProductWidget(product_), PreLoading)
 {
     _product = product_;
-    setPathComponent(_product->name());
+
+    // Create a good looking url.
+    const boost::regex e("[^0-9a-zA-Z]");
+    std::string str = boost::regex_replace(_product->name(), e, "_");
+    setPathComponent(str);
 }
 
 WWidget *ProductMenuItem::createItemWidget()
@@ -29,47 +36,36 @@ WWidget *ProductMenuItem::createItemWidget()
     _faderInvisible->setStyleClass("fader invisible");
 
     WContainerWidget *faderInvisible2 = new WContainerWidget(_faderInvisible);
-    Wt:WString description(
-        "<span class=\"heading\">QEES Dimmer</span>"
-        "<span class=\"price\">65 EUR</span>"
-        "<span class=\"desc\">QEES Dimmer er en 400 Watt universal lysdmper, med indbygget elmler. Med QEES Dimmer kan du dæmpe lyset, ge hyggen og spare p energien.</span>"
-        "<!-- <span class=\"price_sale\"><span>&pound;69.00</span></span> -->", UTF8);
+    new WText(_description(), faderInvisible2);
 
-    new WAnchor("#", description, faderInvisible2);
-
+    // @todo: Add this? Change picutre
     // <!--<div class="sale_label"></div>-->
-    WContainerWidget *salesLabel = new WContainerWidget(collection);
-    salesLabel->setStyleClass("sale_label");
+    //WContainerWidget *salesLabel = new WContainerWidget(collection);
+    //salesLabel->setStyleClass("sale_label");
 
+    // @todo: Add this? Change picutre
     // <!--<div class="sale_label"></div>-->
-    WContainerWidget *offerLabel = new WContainerWidget(collection);
-    offerLabel->setStyleClass("offer_label");
-
-    //<a href="?productId=3" title="QEES Dimmer" class="fader_link invisible"></a>
-    WAnchor * linkis = new WAnchor("#", "",faderInvisible2);
-    linkis->setStyleClass("invisible");
+    //WContainerWidget *offerLabel = new WContainerWidget(collection);
+    //offerLabel->setStyleClass("offer_label");
 
   return result;
 }
 
-void ProductMenuItem::updateItemWidget(WWidget *itemWidget)
+WString ProductMenuItem::_description()
 {
-    //WMenuItem::updateItemWidget(itemWidget);
+    Wt:WString description
+    (
+        "<span class=\"heading\">" + _product->name() + "</span>"
+        "<span class=\"price\">" + _product->salesPrice().amountFmt() + "</span>"
+        "<span class=\"desc\">" + _product->description() + "</span>", UTF8
+    );
+
     /*
-  WAnchor *a = dynamic_cast<WAnchor *>(itemWidget);
+        @todo: add for on sale.
+        "<span class=\"price_sale\"><span>&pound;69.00</span></span>", UTF8);
+    */
 
-  if (a) {
-    a->setText(text());
-
-    std::string url;
-    if (menu_->internalPathEnabled())
-      url = wApp->bookmarkUrl(menu_->internalBasePath() + pathComponent());
-    else
-      url = "#";
-
-    a->setRef(url);
-    a->clicked().setPreventDefault(true);
-  }*/
+    return description;
 }
 
 void ProductMenuItem::_mouseWentOver()

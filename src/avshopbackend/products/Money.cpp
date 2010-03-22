@@ -1,3 +1,6 @@
+#include <iomanip>
+#include <iostream>
+
 #include "boost/lexical_cast.hpp"
 using boost::lexical_cast;
 
@@ -47,8 +50,15 @@ string Money::currency() const
 }
 
 string Money::amountFmt() const
-{    
-    return lexical_cast<std::string>(amount()) + " " + currency();
+{
+    std::stringstream buffer;
+
+    buffer << std::fixed ;
+    buffer << std::setprecision(2) << amount();
+    buffer << " ";
+    buffer << currency();
+
+    return buffer.str();    
 }
 
 bool Money::operator ==( const Money& other_ ) const

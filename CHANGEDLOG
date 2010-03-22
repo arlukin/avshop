@@ -2,14 +2,13 @@ Todo - Release 0.02
     * Good looking site with javascript support.
     * Good looking site without javascript support.
     * All headings and dummy text that should be on the site.
-    * Load db with valid products.    
-    * Use the new login system in the shop.
+    * Load db with valid products.        
 
-Todo - Release 0.03
+Todo - Release 0.03    
     * Send confirmation email when order is completed.
     * Add VAT to products and orderHeader/orderRow.
     * Add shipping cost.
-    * Username and password must be unique in db.
+    * Username and password must be unique in db.    
 
 Todo - Release 0.03
     * Browser Back/forward functionality in product views.
@@ -21,6 +20,7 @@ Todo - Release 0.04 (Better development tools)
     * Setup uml class diagrams.
 
 Todo - Release 0.05 (More comunity feeling)
+    * Use the new login system in the shop.
     * Comment system for products.
     * Rate system for products.
 
@@ -42,6 +42,10 @@ Topo - Release 0.0x
     * Delete items in "check out" cart.
       Need to reorganize a couple of objects and classes to fix this.
 
+2010-03-22
+    * Using database generated text on the "changing" product images.
+    * The URLS are now working as they should.
+
 2010-03-17
     * Product type side panel on all pages.
     * Removed all dependent javascripts (/avshop/approot/var/www/resources/js)
@@ -49,6 +53,7 @@ Topo - Release 0.0x
     * Sorting producttypes on name.
     * When the webapp is starting, all existing servers and stubs are killed.
     * Better looking site with javascript support.
+    * Even better looking site with javascript support.
 
 2010-03-16
     * Use the new login system in the shop, remove UserAccount class.

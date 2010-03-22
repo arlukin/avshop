@@ -19,6 +19,7 @@ add_library(avshopbackend
 target_link_libraries (avshopbackend 
 	soci_mysql-gcc-3_0
         avutils
+        boost_regex
 	${EXTRA_LIBS}
 )
 
