@@ -43,8 +43,8 @@ Topo - Release 0.0x
       Need to reorganize a couple of objects and classes to fix this.
 
 2010-03-22
-    * Using database generated text on the "changing" product images.
     * The URLS are now working as they should.
+    * Using database generated text on the "changing" product images.    
 
 2010-03-17
     * Product type side panel on all pages.

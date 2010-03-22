@@ -93,7 +93,7 @@ void ShopApplication::_createPage()
     _createFooter(root());
 
     _createMenu();
-    _createSidePanel();
+    _createSidePanel();    
 }
 
 void ShopApplication::_createHeader(WContainerWidget *pageContainer_)
@@ -143,9 +143,6 @@ void ShopApplication::_createBody(WContainerWidget *pageContainer_)
 
     _body = new Wt::WStackedWidget(bodyContainer5);
     _body->setStyleClass("product_area");
-
-    _bodyInStack = new Wt::WContainerWidget();
-    _body->addWidget(_bodyInStack);
 }
 
 void ShopApplication::_createFooter(WContainerWidget *pageContainer_)
@@ -272,7 +269,7 @@ void ShopApplication::_createSidePanel()
             productMenu->addItem(new ProductMenuItem(&product));
         }
     }
-    //menu->select(0);
+    //menu->select(1);
 }
 
 WContainerWidget* ShopApplication::_createProductListThumbViewWidget(int productTypeId_)
