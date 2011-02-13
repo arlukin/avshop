@@ -11,26 +11,27 @@
 #include "ProductMenuItem.h"
 
 ProductMenuItem::ProductMenuItem(const Product *product_)
-    : WMenuItem::WMenuItem(product_->imageThumbName("var/www/", "resources/images/productimages/"), new ProductWidget(product_), PreLoading)
+    : WMenuItem::WMenuItem("", new ProductWidget(product_))
 {
-    _product = product_;
+    _product = product_;    
 
     // Create a good looking url.
     const boost::regex e("[^0-9a-zA-Z]");
     std::string str = boost::regex_replace(_product->name(), e, "_");
-    setPathComponent(str);
+    setPathComponent(str);    
 }
 
 WWidget *ProductMenuItem::createItemWidget()
 {        
     //<div class="collection" style="background: url(productimages/QEES_Dimmer_billed_tekst_01_thumb.jpg) no-repeat;">
-    WContainerWidget *result = new WContainerWidget();
+    WAnchor *result = new WAnchor();    
     WContainerWidget *collection = new WContainerWidget(result);
-    collection->mouseWentOver().connect(SLOT(this, ProductMenuItem::_mouseWentOver));
-    collection->mouseWentOut().connect(SLOT(this, ProductMenuItem::_mouseWentOut));
+    result->mouseWentOver().connect(SLOT(this, ProductMenuItem::_mouseWentOver));
+    result->mouseWentOut().connect(SLOT(this, ProductMenuItem::_mouseWentOut));
 
     collection->setStyleClass("collection");
-    collection->decorationStyle().setBackgroundImage(text().toUTF8());
+    WString imageName = _product->imageThumbName("var/www/", "resources/images/productimages/");
+    collection->decorationStyle().setBackgroundImage(imageName.toUTF8());
 
     _faderInvisible = new WContainerWidget(collection);
     _faderInvisible->setStyleClass("fader invisible");

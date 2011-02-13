@@ -1,4 +1,5 @@
 Todo - Release 0.02    
+    * Bug on mini remote, when no javascript is in use.
     * Good looking site with javascript support.
     * Good looking site without javascript support.
     * All headings and dummy text that should be on the site.
@@ -43,6 +44,7 @@ Topo - Release 0.0x
       Need to reorganize a couple of objects and classes to fix this.
 
 2010-03-22
+    * About us is the startpage.
     * The URLS are now working as they should.
     * Using database generated text on the "changing" product images.    
 

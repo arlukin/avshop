@@ -259,7 +259,7 @@ void ShopApplication::_createSidePanel()
 
         WMenuItem * menuItem = menu->addItem(name, productMenu);
 
-        std::string path = "/" + menuItem->pathComponent() + "/";        
+        std::string path = "/product/" + menuItem->pathComponent() + "/";
         productMenu->setInternalPathEnabled(path);
 
         Products& products = *_shopDb.getProducts();
